@@ -5,5 +5,5 @@ PYTHONPATH=/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/pylib2
 export PYTHONPATH
 LD_LIBRARY_PATH=/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib:/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/pylib27
 export LD_LIBRARY_PATH
-/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/bin/vcsfind_create_index.exe  -z  "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/./idents_gxf7FJ.xml.gz" -o "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
-\mv "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/fsearch.db"
+/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/bin/vcsfind_create_index.exe  -z  "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/./idents_d4ZMx3.xml.gz" -o "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/fsearch.db"

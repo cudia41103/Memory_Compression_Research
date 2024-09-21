@@ -58,15 +58,15 @@ __LMOD_REF_COUNT_MODULEPATH=/usr/share/modulefiles:1;/usr/share/Modules/modulefi
 __LMOD_REF_COUNT_LM_LICENSE_FILE=27005@synopsys.webstore.illinois.edu:1
 __LMOD_REF_COUNT_LD_LIBRARY_PATH=/software/Synopsys-2021_x86_64/syn/R-2020.09-SP4/linux64/tcl/lib:1;/class/ece411/riscv/lib:1;/class/ece411/riscv/lib64:1;:1
 _ModuleTable_Sz_=3
-_ModuleTable003_=L2xtb2QvbW9kdWxlZmlsZXMvQ29yZTovZXRjL21vZHVsZWZpbGVzL2VudjovZXRjL21vZHVsZWZpbGVzL2NsYXNzOi9ldGMvbW9kdWxlZmlsZXMvZXdzX3NvZnR3YXJlIiwKfQo=
-_ModuleTable002_=bW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzIiwgIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwgIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiCiwgIi9ldGMvbW9kdWxlZmlsZXMvZW52IiwgIi9ldGMvbW9kdWxlZmlsZXMvY2xhc3MiLCAiL2V0Yy9tb2R1bGVmaWxlcy9ld3Nfc29mdHdhcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXNyL3NoYXJlL01vZHVsZXMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9k
+_ModuleTable003_=bG1vZC9tb2R1bGVmaWxlcy9Db3JlOi9ldGMvbW9kdWxlZmlsZXMvZW52Oi9ldGMvbW9kdWxlZmlsZXMvY2xhc3M6L2V0Yy9tb2R1bGVmaWxlcy9ld3Nfc29mdHdhcmUiLAp9Cg==
+_ModuleTable002_=bW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzIiwgIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwgIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCAiL2V0Yy9tb2R1bGVmaWxlcy9lbnYiLCAiL2V0Yy9tb2R1bGVmaWxlcy9jbGFzcyIsICIvZXRjL21vZHVsZWZpbGVzL2V3c19zb2Z0d2FyZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXNyL3NoYXJlL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvTW9kdWxlcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2Qv
 _ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpbIlN5bm9wc3lzX3g4Ni02NCJdID0gewpmbiA9ICIvZXRjL21vZHVsZWZpbGVzL2V3c19zb2Z0d2FyZS9TeW5vcHN5c194ODYtNjQvMjAyMS5sdWEiLApmdWxsTmFtZSA9ICJTeW5vcHN5c194ODYtNjQvMjAyMSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiU3lub3BzeXNfeDg2LTY0LzIwMjEiLAp3ViA9ICJeMDAwMDIwMjEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi91c3Ivc2hhcmUv
 _LMFILES_=/etc/modulefiles/ews_software/Synopsys_x86-64/2021.lua
-XDG_SESSION_ID=97
+XDG_SESSION_ID=96
 XDG_RUNTIME_DIR=/run/user/1174256
 XDG_DATA_DIRS=/home/cudia2/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-VSCODE_IPC_HOOK_CLI=/run/user/1174256/vscode-ipc-dcbd025c-ddcd-4d71-86d3-25eaeaa89919.sock
-VSCODE_GIT_IPC_HANDLE=/run/user/1174256/vscode-git-e7da9bff4b.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1174256/vscode-ipc-c681bc77-4c0c-463c-ada3-d67aef3be47d.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1174256/vscode-git-c4b32b7b4d.sock
 VSCODE_GIT_ASKPASS_NODE=/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/node
 VSCODE_GIT_ASKPASS_MAIN=/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/extensions/git/dist/askpass-main.js
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
@@ -87,8 +87,8 @@ TERM_PROGRAM=vscode
 SYNOPSYS_LC_ROOT=/software/Synopsys-2021_x86_64/lc/R-2020.09-SP5
 SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
 SSL_CERT_DIR=/etc/pki/tls/certs
-SSH_CONNECTION=10.251.139.219 63108 192.17.9.167 22
-SSH_CLIENT=10.251.139.219 63108 22
+SSH_CONNECTION=10.251.139.219 63252 192.17.9.166 22
+SSH_CLIENT=10.251.139.219 63252 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SOFTPATH=/software
 SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
@@ -104,8 +104,8 @@ MODULESHOME=/usr/share/lmod/lmod
 MODULEPATH_ROOT=/usr/share/modulefiles
 MODULEPATH=/usr/share/modulefiles:/usr/share/Modules/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/etc/modulefiles/env:/etc/modulefiles/class:/etc/modulefiles/ews_software
 MFLAGS=
-MAKE_TERMOUT=/dev/pts/12
-MAKE_TERMERR=/dev/pts/12
+MAKE_TERMOUT=/dev/pts/3
+MAKE_TERMERR=/dev/pts/3
 MAKELEVEL=1
 MAKEFLAGS=
 LOADEDMODULES=Synopsys_x86-64/2021
@@ -152,5 +152,5 @@ BASH_ENV=/usr/share/lmod/lmod/init/bash
 1618975343 /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/liberrorinf.so
 1618975120 /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/libsnpsmalloc.so
 1618975339 /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/libvfs.so
-1726876795 simv.daidir
+1726878525 simv.daidir
 -1 partitionlib

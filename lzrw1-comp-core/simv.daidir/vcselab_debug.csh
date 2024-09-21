@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-cd /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core
+cd /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core
 
 #This ENV is used to avoid overriding current script in next vcselab run 
 setenv SNPS_VCSELAB_SCRIPT_NO_OVERRIDE  1

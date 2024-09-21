@@ -1,6 +1,6 @@
 #!/bin/sh -h 
 
-FILE_PATH="/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch"
+FILE_PATH="/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch"
 lockfile="${FILE_PATH}"/lock
 
 FSearch_lock_release() {
@@ -32,13 +32,13 @@ if [ -d "$dir_name"/../../../../../../../../.. ]; then
     cd "$dir_name"/../../../../../../../../..
 fi
 
-if [ -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/.create_fsearch_db" ]; then
-    if [ ! -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/fsearch.db" ]; then
+if [ -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/.create_fsearch_db" ]; then
+    if [ ! -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/fsearch.db" ]; then
         if [ "$#" -eq 1 ] && [ "x$1" == "x-background" ]; then
             trap FSearch_lock_release EXIT
             (
                 flock 193
-                create_fsearch_db_ctrl "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
+                create_fsearch_db_ctrl "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
                 exit 193
             ) 193> "$lockfile"
             rstat=$?
@@ -46,12 +46,12 @@ if [ -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/
                 exit $rstat
             fi
         else
-            "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
-            if [ -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
-               rm -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/fsearch.stat"
+            "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/.create_fsearch_db"
+            if [ -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
+               rm -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/fsearch.stat"
             fi
         fi
-    elif [ -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
-       rm -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/debug_dump/fsearch/fsearch.stat"
+    elif [ -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/fsearch.stat" ]; then
+       rm -f "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/debug_dump/fsearch/fsearch.stat"
     fi
 fi

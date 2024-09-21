@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	NULL
-pDaiDir                            	/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir
+pDaiDir                            	/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0

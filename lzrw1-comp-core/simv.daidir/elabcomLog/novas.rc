@@ -374,11 +374,11 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-QwWarnMsgDlg = 650,482,600,250
 QwInfoMsgDlg = 575,371,750,250
-QwUserAskDlg = 798,451,324,134
 importDesignForm = 592,246,715,574
 aboutVerdiDialog = 556,169,787,683
+QwWarnMsgDlg = 650,519,600,250
+QwUserAskDlg = 798,451,324,134
 [Relationship]
 hideRecursiceNode = FALSE
 [Safety]
@@ -394,7 +394,7 @@ HighlightSafetyObject = TRUE
 4 = string (session file name)
 5 = string (session file name)
 2 = /home/cudia2/Desktop/NSK
-1 = /home/cudia2/Desktop/NSK Research/m_compression/lzrw1-compression-core/verdiLog/novas_autosave.ses
+1 = /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/verdiLog/novas_autosave.ses
 [Simulation]
 scsPath = scsim
 scsOption = 
@@ -420,13 +420,15 @@ vcs_mixPath = simv
 vcs_mixOption = -vhdlrun "-vhpi debussy:FSDBDumpCmd"
 scs_mixPath = scsim
 scs_mixOption = -vhpi debussy:FSDBDumpCmd
-interactiveDebugging = {True, False}
-KeepBreakPoints = False
 ScsDebugAll = False
 simType = {vcssv, xl, nc, vcs, mti, mti_vlog, vhnc, scs, mixnc}
 thirdpartyIdx = -1
 iscCmdSep = FALSE
 NoAppendOption = False
+bSVTBMode = TRUE
+SimMode = TRUE
+interactiveDebugging = TRUE
+KeepBreakPoints = FALSE
 [SimulationPlus]
 xlPath = verilog
 xlOption = 
@@ -450,16 +452,18 @@ vcs_mixPath = simv
 vcs_mixOption = -vhdlrun "-vhpi debussy:FSDBDumpCmd"
 scs_mixPath = scsim
 scs_mixOption = -vhpi debussy:FSDBDumpCmd
-vcs_svPath = simv
 vcs_svOption = 
-simType = vcssv
 thirdpartyIdx = -1
-interactiveDebugging = FALSE
-KeepBreakPoints = FALSE
 iscCmdSep = FALSE
 ScsDebugAll = FALSE
 NoAppendOption = FALSE
 invokeSimPath = work
+simType = vcssv
+bSVTBMode = TRUE
+SimMode = TRUE
+interactiveDebugging = TRUE
+KeepBreakPoints = FALSE
+vcs_svPath = /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv
 [SimulationPlus2]
 eventDumpUnfinish = FALSE
 [Source]
@@ -667,33 +671,33 @@ isOneSearchVisible = TRUE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = Type
+name = Severity
 width = 60
-visualIndex = 3
+visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = Message
-width = 2000
-visualIndex = 4
-isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
-name = Time
-width = 60
-visualIndex = 0
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
 name = Code
 width = 60
 visualIndex = 2
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
-name = Severity
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
+name = Type
 width = 60
-visualIndex = 1
+visualIndex = 3
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+name = Message
+width = 2000
+visualIndex = 4
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = Time
+width = 60
+visualIndex = 0
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [Vi]
@@ -941,10 +945,11 @@ printBasic = 1 0 0 FALSE FALSE
 printDest = -printer {}
 printSignature = {%f %h %t} {}
 curveWindow_Drag&Drop_Mode = TRUE
-RecentFile1 = "\"/home/cudia2/Desktop/NSK Research/m_compression/lzrw1-compression-core/dump.fsdb\""
+RecentFile1 = "\"/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/dump.fsdb\""
 RecentFile2 = "\"/home/cudia2/Desktop/NSK\""
 RecentFile3 = "\"/home/cudia2/Desktop/NSK\""
 RecentFile4 = "\"/home/cudia2/Desktop/NSK\""
+RecentFile5 = "\"/home/cudia2/Desktop/NSK\""
 open_file_time_range = FALSE
 legend_window_font = -f COURIER12 -c ID_CYAN5
 value_window_font = -f COURIER12 -c ID_CYAN5
