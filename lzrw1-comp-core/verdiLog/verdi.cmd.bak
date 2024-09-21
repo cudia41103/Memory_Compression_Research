@@ -1,0 +1,6 @@
+debImport "-base"
+wvCreateWindow
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 \
+           {/home/cudia2/Desktop/NSK Research/m_compression/lzrw1-compression-core/dump.fsdb}
+debExit
