@@ -1,0 +1,168 @@
+0 
+46
++itf+/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/vcsdp_lite.tab
++lint=all,noNS
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/libvirsim.so /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/liberrorinf.so /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/libsnpsmalloc.so /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/include
+-P
+-Xufe=2steps
+-debug_acc+all
+-debug_acc+fsdb
+-fsdb
+-full64
+-gen_obj
+-kdb
+-lca
+-o simv
+-picarchive
+-suppress=LCA_FEATURES_ENABLED
+-sverilog
+-timescale=1ns/1ns
+/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/bin/vcs1
+/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/verdi.tab
+simv
+TBandDesign/top.sv
+compressor/Comparator.sv
+compressor/compinput.sv
+compressor/hashFunction.sv
+compressor/tableofPtr.sv
+compressor/CompressedValues.sv
+compressor/compressor_top.sv
+decompressor/history_buffer.sv
+decompressor/decompressor_top.sv
+91
+which_declare=declare -f
+apath=/usr/bin/acroread
+acroread_path=/usr/bin/acroread
+__LMOD_STACK_apath=L3Vzci9iaW4vYWNyb3JlYWQ=
+__LMOD_STACK_acroread_path=L3Vzci9iaW4vYWNyb3JlYWQ=
+__LMOD_STACK_VERDI_HOME=L3NvZnR3YXJlL1N5bm9wc3lzLTIwMjFfeDg2XzY0L3ZlcmRpL1ItMjAyMC4xMi1TUDEtMQ==
+__LMOD_STACK_VCS_HOME=L3NvZnR3YXJlL1N5bm9wc3lzLTIwMjFfeDg2XzY0L3Zjcy9SLTIwMjAuMTItU1AxLTE=
+__LMOD_STACK_SYNOPSYS_LC_ROOT=L3NvZnR3YXJlL1N5bm9wc3lzLTIwMjFfeDg2XzY0L2xjL1ItMjAyMC4wOS1TUDU=
+__LMOD_REF_COUNT_PATH=/software/Synopsys-2021_x86_64/wv/R-2020.12-SP1/bin:1;/software/Synopsys-2021_x86_64/vui/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/vtran/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/vgen/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/vc_static/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/vcs-mx/O-2018.09-SP2-3/bin:1;/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/vc_ml_platform/2019.06/mlplatform/bin:1;/software/Synopsys-2021_x86_64/vcap/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/ufe_optional_spyglass-vcs/R-2020.12-SP1-1/SPYGLASS_HOME/bin:1;/software/Synopsys-2021_x86_64/txs/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/taurus_tsuprem4/R_2020.09/bin:1;/software/Synopsys-2021_x86_64/taurus_medici/	R_2020.09/bin:1;/software/Synopsys-2021_x86_64/syn/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/starrc/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/spyglass/R-2020.12-SP1-1/SPYGLASS_HOME/bin:1;/software/Synopsys-2021_x86_64/spx/R-2020.09-SP2/bin:1;/software/Synopsys-2021_x86_64/siliconsmart/R-2020.12-SP1/bin:1;/software/Synopsys-2021_x86_64/sentaurus/R_2020.09-SP1/bin:1;/software/Synopsys-2021_x86_64/raphael/R_2020.09a/bin:1;/software/Synopsys-2021_x86_64/prime/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/pcm_studio/R-2021.03/bin:1;/software/Synopsys-2021_x86_64/nt/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/mw/R-2020.09-SP4/bin/linux64:1;/software/Synopsys-2021_x86_64/mlwizard/R-2021.03-SP1/bin:1;/software/Synopsys-2021_x86_64/lc/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/laker/L-2020.06-3/bin:1;/software/Synopsys-2021_x86_64/idq/R-2020.09-SP4/linux64/iddq/bin:1;/software/Synopsys-2021_x86_64/identify/R-2021.03/bin:1;/software/Synopsys-2021_x86_64/icv_workbench/R-2020.09-SP2/bin:1;/software/Synopsys-2021_x86_64/icvalidator/R-2020.09-SP3-3/bin:1;/software/Synopsys-2021_x86_64/icc2/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/icc/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/hspice/R-2020.12-SP1/hspice/bin:1;/software/Synopsys-2021_x86_64/hsim/R-2020.12-SP1/hsimplus/bin:1;/software/Synopsys-2021_x86_64/fpga/R-2021.03/bin:1;/software/Synopsys-2021_x86_64/fm/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/finesim/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/esp/R-2020.09-SP2/bin:1;/software/Synopsys-2021_x86_64/dftview/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/customcompiler/R-2020.12-SP1/bin:1;/software/Synopsys-2021_x86_64/coretools/R-2020.12-SP3/bin:1;/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/bin/remote-cli:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/software/ews/bin:3;/class/ece411/riscv/bin:1;/class/ece411/verilator/bin:1
+__LMOD_REF_COUNT_MODULEPATH=/usr/share/modulefiles:1;/usr/share/Modules/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/etc/modulefiles/env:1;/etc/modulefiles/class:1;/etc/modulefiles/ews_software:1
+__LMOD_REF_COUNT_LM_LICENSE_FILE=27005@synopsys.webstore.illinois.edu:1
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/software/Synopsys-2021_x86_64/syn/R-2020.09-SP4/linux64/tcl/lib:1;/class/ece411/riscv/lib:1;/class/ece411/riscv/lib64:1;:1
+_ModuleTable_Sz_=3
+_ModuleTable003_=L2xtb2QvbW9kdWxlZmlsZXMvQ29yZTovZXRjL21vZHVsZWZpbGVzL2VudjovZXRjL21vZHVsZWZpbGVzL2NsYXNzOi9ldGMvbW9kdWxlZmlsZXMvZXdzX3NvZnR3YXJlIiwKfQo=
+_ModuleTable002_=bW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzIiwgIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwgIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiCiwgIi9ldGMvbW9kdWxlZmlsZXMvZW52IiwgIi9ldGMvbW9kdWxlZmlsZXMvY2xhc3MiLCAiL2V0Yy9tb2R1bGVmaWxlcy9ld3Nfc29mdHdhcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXNyL3NoYXJlL01vZHVsZXMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9k
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpbIlN5bm9wc3lzX3g4Ni02NCJdID0gewpmbiA9ICIvZXRjL21vZHVsZWZpbGVzL2V3c19zb2Z0d2FyZS9TeW5vcHN5c194ODYtNjQvMjAyMS5sdWEiLApmdWxsTmFtZSA9ICJTeW5vcHN5c194ODYtNjQvMjAyMSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiU3lub3BzeXNfeDg2LTY0LzIwMjEiLAp3ViA9ICJeMDAwMDIwMjEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi91c3Ivc2hhcmUv
+_LMFILES_=/etc/modulefiles/ews_software/Synopsys_x86-64/2021.lua
+XDG_SESSION_ID=55
+XDG_RUNTIME_DIR=/run/user/1174256
+XDG_DATA_DIRS=/home/cudia2/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+VSCODE_IPC_HOOK_CLI=/run/user/1174256/vscode-ipc-b437581a-7cb9-494c-bf0f-e5592a5b3838.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1174256/vscode-git-e7da9bff4b.sock
+VSCODE_GIT_ASKPASS_NODE=/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/node
+VSCODE_GIT_ASKPASS_MAIN=/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VMR_MODE_FLAG=64
+VERDI_HOME=/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64
+TERM_PROGRAM_VERSION=1.93.1
+TERM_PROGRAM=vscode
+SYNOPSYS_LC_ROOT=/software/Synopsys-2021_x86_64/lc/R-2020.09-SP5
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+SSL_CERT_DIR=/etc/pki/tls/certs
+SSH_CONNECTION=10.194.155.94 52381 192.17.9.168 22
+SSH_CLIENT=10.194.155.94 52381 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SOFTPATH=/software
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+OVA_UUM=0
+OPENRAM=/class/ece411/OpenRAM
+MSI2LMP_LIBRARY=/usr/share/lammps/frc_files
+MODULESHOME=/usr/share/lmod/lmod
+MODULEPATH_ROOT=/usr/share/modulefiles
+MODULEPATH=/usr/share/modulefiles:/usr/share/Modules/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/etc/modulefiles/env:/etc/modulefiles/class:/etc/modulefiles/ews_software
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/12
+MAKE_TERMERR=/dev/pts/12
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=Synopsys_x86-64/2021
+LMOD_sys=Linux
+LMOD_arch=x86_64
+LMOD_VERSION=8.7.48
+LMOD_SETTARG_FULL_SUPPORT=no
+LMOD_ROOT=/usr/share/lmod
+LMOD_PKG=/usr/share/lmod/lmod
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+LMODARCH=x86_64
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+LAMMPS_POTENTIALS=/usr/share/lammps/potentials
+KRB5CCNAME=KCM:
+HISTCONTROL=ignoredups
+GIT_ASKPASS=/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/extensions/git/dist/askpass.sh
+FREEPDK45=/class/ece411/freepdk-45nm
+FPATH=/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.5.1/functions:/usr/share/lmod/lmod/init/ksh_funcs
+ECE411_GUI_TIMEOUT=1h
+DW=/software/Synopsys-2021_x86_64/icc/R-2020.09-SP4/dw
+DISTARCH=Linux-x86_64
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1174256/bus
+COLORTERM=truecolor
+CBP2016=/class/ece411/cbp2016
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then_ case "$-" in _ *v*x*)_ __lmod_sh_dbg='vx'_ ;;_ *v*)_ __lmod_sh_dbg='v'_ ;;_ *x*)_ __lmod_sh_dbg='x'_ ;;_ esac;_ fi;_ if [ -n "${__lmod_sh_dbg:-}" ]; then_ set +$__lmod_sh_dbg;_ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;_ fi;_ eval "$($LMOD_CMD shell "$@")" && eval "$(${LMOD_SETTARG_CMD:-:} -s sh)";_ __lmod_my_status=$?;_ if [ -n "${__lmod_sh_dbg:-}" ]; then_ echo "Shell debugging restarted" 1>&2;_ set -$__lmod_sh_dbg;_ fi;_ unset __lmod_sh_dbg;_ return $__lmod_my_status_}
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"_}
+BASH_ENV=/usr/share/lmod/lmod/init/bash
+0
+19
+1726544625 TBandDesign/interface.sv
+1726544625 TBandDesign/testcase.sv
+1726544625 TBandDesign/env.sv
+1726544625 TBandDesign/checker.sv
+1726544625 TBandDesign/driver.sv
+1726544625 TBandDesign/string_writer.sv
+1727038615 TBandDesign/fileReader.sv
+1726544625 TBandDesign/combined_top.sv
+1726544626 decompressor/decompressor_top.sv
+1726544626 decompressor/history_buffer.sv
+1726957179 compressor/compressor_top.sv
+1726544625 compressor/CompressedValues.sv
+1726544626 compressor/tableofPtr.sv
+1726544626 compressor/hashFunction.sv
+1726544625 compressor/compinput.sv
+1726957542 compressor/Comparator.sv
+1726544625 TBandDesign/top.sv
+1618931515 /software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/verdi.tab
+1618974649 /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/vcsdp_lite.tab
+4
+1618976102 /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/libvirsim.so
+1618975343 /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/liberrorinf.so
+1618975120 /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/libsnpsmalloc.so
+1618975339 /software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/linux64/lib/libvfs.so
+1727038924 simv.daidir
+-1 partitionlib

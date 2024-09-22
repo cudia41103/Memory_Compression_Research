@@ -10,19 +10,19 @@ run_top_testbench: compile_testbench_sv
 	./simv 
 
 run_decompressor_testbench: compile_decompressor_sv 
-	./simv +NUM_AUTO_TESTS=100 
+	./simv_decompressor +NUM_AUTO_TESTS=100 
 
 run_compressor_testbench: compile_compressor_sv
-	./simv 
+	./simv_compressor 
 
-compile_testbench_sv: compile_compressor_sv compile_decompressor_sv
-	vcs -sverilog TBandDesign/top.sv -o simv
+compile_testbench_sv:
+	vcs $(VCS_FLAGS) TBandDesign/top.sv compressor/Comparator.sv compressor/compinput.sv compressor/hashFunction.sv compressor/tableofPtr.sv compressor/CompressedValues.sv compressor/compressor_top.sv decompressor/history_buffer.sv decompressor/decompressor_top.sv -o simv
 
 # Add -fsdb and -debug_access+all for FSDB generation
 compile_compressor_sv:
-	vcs $(VCS_FLAGS) compressor/Comparator.sv compressor/compinput.sv compressor/hashFunction.sv compressor/tableofPtr.sv compressor/CompressedValues.sv compressor/compressor_top.sv compressor/compinput_tb.sv -o simv
+	vcs $(VCS_FLAGS) compressor/Comparator.sv compressor/compinput.sv compressor/hashFunction.sv compressor/tableofPtr.sv compressor/CompressedValues.sv compressor/compressor_top.sv compressor/compinput_tb.sv -o simv_compressor
 compile_decompressor_sv:
-	vcs $(VCS_FLAGS) decompressor/history_buffer.sv decompressor/decompressor_top.sv decompressor/decompressor_top_tb.sv -o simv
+	vcs $(VCS_FLAGS) decompressor/history_buffer.sv decompressor/decompressor_top.sv decompressor/decompressor_top_tb.sv -o simv_decompressor
 
 create_test_vectors:
 	python3 test_vectors/GenerateVectors.py $(TESTVECTORSFLAGS)

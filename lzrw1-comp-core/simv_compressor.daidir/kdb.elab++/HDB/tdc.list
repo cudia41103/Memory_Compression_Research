@@ -1,0 +1,7 @@
+compressor/Comparator.sv
+compressor/CompressedValues.sv
+compressor/compinput.sv
+compressor/compinput_tb.sv
+compressor/compressor_top.sv
+compressor/hashFunction.sv
+compressor/tableofPtr.sv

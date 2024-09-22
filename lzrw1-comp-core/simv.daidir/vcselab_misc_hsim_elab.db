@@ -950,9 +950,9 @@ fHsimCheckLoop                     	1
 fHsimCheckLoopDiag                 	0
 fHsimCheckLoopMore                 	0
 fHsimLoop                          	1
-fHsimMdbDeltaGate                  	0
+fHsimMdbDeltaGate                  	1
 fHsimMdbDeltaGateAggr              	0
-fHsimMdbVecDeltaGate               	0
+fHsimMdbVecDeltaGate               	1
 fHsimVpdOptVfsDB                   	1
 fHsimMdbPruneVpdGates              	1
 fHsimPcPe                          	0

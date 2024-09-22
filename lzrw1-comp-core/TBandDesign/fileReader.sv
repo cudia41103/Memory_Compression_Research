@@ -42,7 +42,7 @@ task drive_data();
 	@(posedge input_intf.clock)
 	begin
 	//data_to_send <= global_string.substr(start_point,start_point+1);
-	  data_to_send <= string'(global_string[start_point]);
+	  data_to_send = string'(global_string[start_point]);
 	 
 	/* Drive data into the DUT */
 	//input_intf.cb.CurByte <= data_to_send.atoi();
@@ -64,15 +64,15 @@ task drive_data();
 	input_intf.cb.CurByte[15] <= int'(global_string[start_point+15]);
 	input_intf.cb.valid   <= 1'b1;
 	input_intf.cb.reset   <= 1'b0;
-	$display($time,"-D input_intf.cb.valid=%d",input_intf.cb.valid);
+	$display($time,"-D input_intf.cb.valid= 1");
 	$display("-D\tData to be sent is %p",data_to_send);
-	$display("-D\tDUT input data : %p",input_intf.cb.CurByte);
+	$display("-D\tDUT input data : %p",(global_string.substr(start_point, start_point + 15)));
 	end
 	end
 	input_intf.cb.valid   <= 1'b0;
 	//input_intf.cb.done    <= 1'b1;
 	$display($time,"-D Finished driving data into compressor");
-	$display($time,"-D input_intf.cb.valid=%d",input_intf.cb.valid);
+	// $display($time,"-D input_intf.cb.valid=%d",input_intf.cb.valid);
 	//end
 endtask		: drive_data
 endclass : file_reader

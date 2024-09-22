@@ -493,9 +493,9 @@ igetFieldSmdPtr                    	-1
 fDebugDump                         	1
 fHsimOrigNodeNames                 	0
 fHsimCgVectors2VOnly               	0
-fHsimMdbDeltaGate                  	0
+fHsimMdbDeltaGate                  	1
 fHsimMdbDeltaGateAggr              	0
-fHsimMdbVecDeltaGate               	0
+fHsimMdbVecDeltaGate               	1
 fHsimVpdOptVfsDB                   	1
 fHsimMdbPruneVpdGates              	1
 fHsimPcPe                          	0

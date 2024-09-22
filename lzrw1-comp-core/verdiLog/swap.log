@@ -264,4 +264,243 @@ read   => 13(times) 180K(bytes) [38K bytes compressed data from file]
 access => 1533431(times) 12035M(bytes)
           [hit ratio: 99.9992%]
 
-tim
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog)
+used swap file number: (19)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (20)
+closeHead: (16)
+closeTail: (19)
+openCnt: (4)
+fid(19): fd(1073741826) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/kdb.elab++/work.lib++/CompressedValues.sv.tdc)
+	size(2918) lastModTime(1726955156) curModTime(1726955156)
+	mode(rb)	hot(0) cool(18) pos(0)
+fid(18): fd(1073741825) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/kdb.elab++/work.lib++/compressor_top.sv.tdc)
+	size(3027) lastModTime(1726955156) curModTime(1726955156)
+	mode(rb)	hot(19) cool(17) pos(0)
+fid(17): fd(33) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog/_swap_0001#380378854#350625)
+	size(0) lastModTime(0) curModTime(1726955165)
+	mode(w+b)	hot(18) cool(16) pos(0)
+fid(16): fd(1073741824) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/kdb.elab++/work.lib++/compinput_tb.sv.tdc)
+	size(7552) lastModTime(1726955156) curModTime(1726955156)
+	mode(rb)	hot(17) cool(0) pos(0)
+fid(15): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(14): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(13): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(12): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(11): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(10): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(9): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(8): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+==================================================
+mySelf(18157260) pre(16e92110) next(0)
+version(200506)
+date(Mar 24 2021 03:58:02)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 2M bytes [need 240K bytes if disable swap]
+
+used block: 39 [memory(39) file(0)]
+                 [ 8K(26) 64K(13) { total 2M bytes } ]
+overhead: (9538) bytes for (39) blocks [Average: (244) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 13(times) 180K(bytes) [38K bytes compressed data from file]
+access => 1533431(times) 12035M(bytes)
+          [hit ratio: 99.9992%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog)
+used swap file number: (19)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (20)
+closeHead: (16)
+closeTail: (19)
+openCnt: (1)
+fid(19): fd(0) fileName(NULL)
+	mode(rb)	hot(18) cool(0) pos(0)
+fid(18): fd(0) fileName(NULL)
+	mode(rb)	hot(17) cool(19) pos(0)
+fid(17): fd(0) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog/_swap_0001#380378854#350625)
+	size(-1) lastModTime(0) curModTime(-1)
+	mode(w+b)	hot(18) cool(18) pos(0)
+fid(16): fd(1073741824) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/kdb.elab++/work.lib++/compinput_tb.sv.tdc)
+	size(7552) lastModTime(1726955156) curModTime(1726955156)
+	mode(rb)	hot(17) cool(0) pos(0)
+fid(15): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(14): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(13): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(12): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(11): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(10): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(9): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(8): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+==================================================
+mySelf(18157260) pre(16e92110) next(0)
+version(200506)
+date(Mar 24 2021 03:58:02)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 2M bytes [need 240K bytes if disable swap]
+
+used block: 39 [memory(39) file(0)]
+                 [ 8K(26) 64K(13) { total 2M bytes } ]
+overhead: (9538) bytes for (39) blocks [Average: (244) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 13(times) 180K(bytes) [38K bytes compressed data from file]
+access => 1533431(times) 12035M(bytes)
+          [hit ratio: 99.9992%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog)
+used swap file number: (19)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (20)
+closeHead: (16)
+closeTail: (19)
+openCnt: (1)
+fid(19): fd(0) fileName(NULL)
+	mode(rb)	hot(18) cool(0) pos(0)
+fid(18): fd(0) fileName(NULL)
+	mode(rb)	hot(17) cool(19) pos(0)
+fid(17): fd(0) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog/_swap_0001#380378854#350625)
+	size(-1) lastModTime(0) curModTime(-1)
+	mode(w+b)	hot(18) cool(18) pos(0)
+fid(16): fd(1073741824) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/kdb.elab++/work.lib++/compinput_tb.sv.tdc)
+	size(7552) lastModTime(1726955156) curModTime(1726955156)
+	mode(rb)	hot(17) cool(0) pos(0)
+fid(15): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(14): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(13): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(12): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(11): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(10): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(9): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(8): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+==================================================
+mySelf(18157260) pre(16e92110) next(0)
+version(200506)
+date(Mar 24 2021 03:58:02)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 2M bytes [need 240K bytes if disable swap]
+
+used block: 39 [memory(39) file(0)]
+                 [ 8K(26) 64K(13) { total 2M bytes } ]
+overhead: (9538) bytes for (39) blocks [Average: (244) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 13(times) 180K(bytes) [38K bytes compressed data from file]
+access => 1533431(times) 12035M(bytes)
+          [hit ratio: 99.9992%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog)
+used swap file number: (19)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (20)
+closeHead: (16)
+closeTail: (19)
+openCnt: (1)
+fid(19): fd(0) fileName(NULL)
+	mode(rb)	hot(18) cool(0) pos(0)
+fid(18): fd(0) fileName(NULL)
+	mode(rb)	hot(17) cool(19) pos(0)
+fid(17): fd(0) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog/_swap_0001#380378854#350625)
+	size(-1) lastModTi

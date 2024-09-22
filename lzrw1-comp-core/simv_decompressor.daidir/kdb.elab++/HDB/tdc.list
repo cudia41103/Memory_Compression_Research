@@ -1,0 +1,3 @@
+decompressor/decompressor_top.sv
+decompressor/decompressor_top_tb.sv
+decompressor/history_buffer.sv
