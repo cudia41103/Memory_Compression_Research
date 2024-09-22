@@ -3,6 +3,7 @@ export VCS_ARCH_OVERRIDE=linux
 VCS_FLAGS= -full64 -lca -sverilog +lint=all,noNS -timescale=1ns/1ns -debug_acc+all -kdb -fsdb -suppress=LCA_FEATURES_ENABLED
 COMP_HDL_SRCS := $(shell find $(PWD)/compressor -name '*.sv')
 DECOMP_HDL_SRCS := $(shell find $(PWD)/decompressor -name '*.sv')
+export LD_LIBRARY_PATH=/custom/lib:$LD_LIBRARY_PATH
 
 
 run_top_testbench: compile_testbench_sv
@@ -21,7 +22,7 @@ compile_testbench_sv: compile_compressor_sv compile_decompressor_sv
 compile_compressor_sv:
 	vcs $(VCS_FLAGS) compressor/Comparator.sv compressor/compinput.sv compressor/hashFunction.sv compressor/tableofPtr.sv compressor/CompressedValues.sv compressor/compressor_top.sv compressor/compinput_tb.sv -o simv
 compile_decompressor_sv:
-	vcs -sverilog decompressor/history_buffer.sv decompressor/decompressor_top.sv decompressor/decompressor_top_tb.sv -o simv
+	vcs $(VCS_FLAGS) decompressor/history_buffer.sv decompressor/decompressor_top.sv decompressor/decompressor_top_tb.sv -o simv
 
 create_test_vectors:
 	python3 test_vectors/GenerateVectors.py $(TESTVECTORSFLAGS)

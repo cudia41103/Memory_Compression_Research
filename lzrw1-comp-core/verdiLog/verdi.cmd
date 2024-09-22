@@ -1,49 +1,70 @@
 simSetSimulator "-vcssv" -exec \
-           "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv" \
+           "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv" \
            -args
 debImport "-base" "-dbdir" \
-          "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir"
+          "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir"
 debLoadSimResult \
-           /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/dump.fsdb
+           /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/dump.fsdb
 wvCreateWindow
 srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcSetScope "compinput_tb.ctop" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcHBSelect "compinput_tb.ctop.CV" -win $_nTrace1
+srcSetScope "compinput_tb.ctop.CV" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb.ctop.CV" -win $_nTrace1
 srcHBSelect "compinput_tb.ctop" -win $_nTrace1
 srcSetScope "compinput_tb.ctop" -delim "." -win $_nTrace1
 srcHBSelect "compinput_tb.ctop" -win $_nTrace1
 srcDeselectAll -win $_nTrace1
-srcSelect -signal "offset" -line 23 -pos 1 -win $_nTrace1
+debReload
+srcHBSelect "compinput_tb.ctop.CV" -win $_nTrace1
+srcHBSelect "compinput_tb" -win $_nTrace1
+srcSetScope "compinput_tb" -delim "." -win $_nTrace1
+debReload
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "testString\[k\]" -line 63 -pos 1 -win $_nTrace1
 srcAddSelectedToWave -clipboard -win $_nTrace1
 wvDrop -win $_nWave2
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcSetScope "compinput_tb.ctop" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
 srcDeselectAll -win $_nTrace1
-srcSelect -signal "clock" -line 14 -pos 1 -win $_nTrace1
+srcSelect -signal "CurByte" -line 15 -pos 1 -win $_nTrace1
 srcDeselectAll -win $_nTrace1
-srcSelect -signal "clock" -line 14 -pos 1 -win $_nTrace1
+debReload
+srcHBSelect "compinput_tb" -win $_nTrace1
+srcSetScope "compinput_tb" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb" -win $_nTrace1
 srcDeselectAll -win $_nTrace1
+srcSelect -signal "CurByte" -line 18 -pos 1 -win $_nTrace1
+debReload
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcSetScope "compinput_tb.ctop" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
 srcDeselectAll -win $_nTrace1
-srcSelect -signal "clock" -line 14 -pos 1 -win $_nTrace1
-srcSelect -signal "reset" -line 14 -pos 1 -win $_nTrace1
+srcSelect -signal "CurByte" -line 15 -pos 1 -win $_nTrace1
 srcDeselectAll -win $_nTrace1
+srcSelect -signal "compArray" -line 17 -pos 1 -win $_nTrace1
+srcHBSelect "compinput_tb" -win $_nTrace1
+srcSetScope "compinput_tb" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb" -win $_nTrace1
 srcDeselectAll -win $_nTrace1
 debReload
 srcDeselectAll -win $_nTrace1
-srcSelect -signal "clock" -line 14 -pos 1 -win $_nTrace1
+srcSelect -signal "compArray" -line 22 -pos 1 -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcSetScope "compinput_tb.ctop" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
 srcDeselectAll -win $_nTrace1
-srcSelect -signal "clock" -line 14 -pos 1 -win $_nTrace1
+srcSelect -signal "compArray" -line 17 -pos 1 -win $_nTrace1
 srcDeselectAll -win $_nTrace1
+srcSelect -signal "compArray" -line 17 -pos 1 -win $_nTrace1
+srcAction -pos 16 18 5 -win $_nTrace1 -name "compArray" -ctrlKey off
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcSetScope "compinput_tb.ctop" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
 srcDeselectAll -win $_nTrace1
-srcSelect -signal "clock" -line 14 -pos 1 -win $_nTrace1
-srcSelect -signal "reset" -line 14 -pos 1 -win $_nTrace1
-srcAddSelectedToWave -clipboard -win $_nTrace1
-wvDrop -win $_nWave2
-wvZoom -win $_nWave2 404685.672577 1230918.920756
-wvZoom -win $_nWave2 0.000000 8601.618547
-wvZoom -win $_nWave2 4293.346909 4900.285870
-wvSetCursor -win $_nWave2 8.073798 -snap {("G1" 3)}
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "Done" -line 16 -pos 1 -win $_nTrace1
-srcAddSelectedToWave -clipboard -win $_nTrace1
-wvDrop -win $_nWave2
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "Done" -line 16 -pos 1 -win $_nTrace1
-srcAction -pos 15 5 2 -win $_nTrace1 -name "Done" -ctrlKey off
-debExit
+srcSelect -win $_nTrace1 -range {11 21 1 1 1 1} -backward
+srcHBSelect "compinput_tb.ctop.CV" -win $_nTrace1
+srcSetScope "compinput_tb.ctop.CV" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb.ctop.CV" -win $_nTrace1

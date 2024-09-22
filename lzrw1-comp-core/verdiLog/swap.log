@@ -1,77 +1,77 @@
 version: (200506)
 
 available memory: 64M bytes
-used memory: 155648 bytes [need 152K bytes if disable swap]
+used memory: 237568 bytes [need 232K bytes if disable swap]
 
-used block: 5 [memory(5) file(0)]
-                 [ 8K(3) 64K(2) { total 152K bytes } ]
-overhead: (9538) bytes for (5) blocks [Average: (1907) bytes/block]
+used block: 8 [memory(8) file(0)]
+                 [ 8K(5) 64K(3) { total 232K bytes } ]
+overhead: (9538) bytes for (8) blocks [Average: (1192) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 2(times) 31K(bytes) [6K bytes compressed data from file]
-access => 341931(times) 2677M(bytes)
-          [hit ratio: 99.9994%]
+read   => 3(times) 38K(bytes) [8K bytes compressed data from file]
+access => 167247(times) 1317M(bytes)
+          [hit ratio: 99.9982%]
 
 time: write(0) read(0)  unit: second
 
-swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/verdiLog)
-used swap file number: (3)
+swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog)
+used swap file number: (4)
 
 
 
 swap file manager:
 arrSize: (256)
-idxCnt: (4)
+idxCnt: (5)
 closeHead: (1)
-closeTail: (3)
+closeTail: (4)
 openCnt: (1)
+fid(4): fd(0) fileName(NULL)
+	mode(rb)	hot(3) cool(0) pos(0)
 fid(3): fd(0) fileName(NULL)
-	mode(rb)	hot(1) cool(0) pos(0)
-fid(2): fd(27) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/verdiLog/_swap_0001#380396006#1316316)
-	size(0) lastModTime(0) curModTime(1726876827)
+	mode(rb)	hot(1) cool(4) pos(0)
+fid(2): fd(26) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog/_swap_0001#380378854#350625)
+	size(0) lastModTime(0) curModTime(1726952654)
 	mode(w+b)	hot(3) cool(1) pos(0)
 fid(1): fd(0) fileName(NULL)
 	mode(rb)	hot(2) cool(3) pos(0)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
-Swap system is reset at (Fri Sep 20 19:01:08 2024
+Swap system is reset at (Sat Sep 21 16:05:41 2024
 )
 version: (200506)
 
 available memory: 64M bytes
-used memory: 319488 bytes [need 160K bytes if disable swap]
+used memory: 319488 bytes [need 232K bytes if disable swap]
 
 used block: 11 [memory(11) file(0)]
                  [ 8K(7) 64K(4) { total 312K bytes } ]
 overhead: (9538) bytes for (11) blocks [Average: (867) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 4(times) 57K(bytes) [11K bytes compressed data from file]
-access => 408412(times) 3204M(bytes)
-          [hit ratio: 99.999%]
+read   => 4(times) 47K(bytes) [10K bytes compressed data from file]
+access => 304502(times) 2393M(bytes)
+          [hit ratio: 99.9987%]
 
 time: write(0) read(0)  unit: second
 
-swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/verdiLog)
-used swap file number: (6)
+swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog)
+used swap file number: (5)
 
 
 
 swap file manager:
 arrSize: (256)
 idxCnt: (7)
-closeHead: (4)
+closeHead: (5)
 closeTail: (6)
-openCnt: (3)
-fid(6): fd(1073741825) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/kdb.elab++/work.lib++/compinput.sv.tdc)
-	size(5042) lastModTime(1726876791) curModTime(1726876791)
-	mode(rb)	hot(0) cool(5) pos(0)
-fid(5): fd(36) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/verdiLog/_swap_0001#380396006#1316316)
-	size(0) lastModTime(0) curModTime(1726876869)
-	mode(w+b)	hot(6) cool(4) pos(0)
-fid(4): fd(1073741824) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv.daidir/kdb.elab++/work.lib++/compressor_top.sv.tdc)
-	size(3034) lastModTime(1726876791) curModTime(1726876791)
-	mode(rb)	hot(5) cool(0) pos(0)
+openCnt: (1)
+fid(6): fd(35) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog/_swap_0001#380378854#350625)
+	size(0) lastModTime(0) curModTime(1726952742)
+	mode(w+b)	hot(0) cool(5) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(rb)	hot(6) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
 fid(3): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(2): fd(0) fileName(NULL)
@@ -80,7 +80,188 @@ fid(1): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
-==================================================
-mySelf(183f6440) pre(17dbed70) next(0)
-version(200506)
-date(Mar 24 2021 03:58:02)
+Swap system is reset at (Sat Sep 21 16:15:05 2024
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 483328 bytes [need 232K bytes if disable swap]
+
+used block: 17 [memory(17) file(0)]
+                 [ 8K(11) 64K(6) { total 472K bytes } ]
+overhead: (9538) bytes for (17) blocks [Average: (561) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 6(times) 78K(bytes) [16K bytes compressed data from file]
+access => 397687(times) 3130M(bytes)
+          [hit ratio: 99.9985%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog)
+used swap file number: (9)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (10)
+closeHead: (7)
+closeTail: (9)
+openCnt: (1)
+fid(9): fd(0) fileName(NULL)
+	mode(rb)	hot(7) cool(0) pos(0)
+fid(8): fd(34) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog/_swap_0001#380378854#350625)
+	size(0) lastModTime(0) curModTime(1726953306)
+	mode(w+b)	hot(9) cool(7) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(rb)	hot(8) cool(9) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Sat Sep 21 16:17:30 2024
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 655360 bytes [need 232K bytes if disable swap]
+
+used block: 24 [memory(24) file(0)]
+                 [ 8K(16) 64K(8) { total 640K bytes } ]
+overhead: (9538) bytes for (24) blocks [Average: (397) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 8(times) 109K(bytes) [23K bytes compressed data from file]
+access => 592738(times) 4665M(bytes)
+          [hit ratio: 99.9987%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog)
+used swap file number: (12)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (13)
+closeHead: (10)
+closeTail: (12)
+openCnt: (1)
+fid(12): fd(0) fileName(NULL)
+	mode(rb)	hot(10) cool(0) pos(0)
+fid(11): fd(33) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog/_swap_0001#380378854#350625)
+	size(0) lastModTime(0) curModTime(1726953451)
+	mode(w+b)	hot(12) cool(10) pos(0)
+fid(10): fd(0) fileName(NULL)
+	mode(rb)	hot(11) cool(12) pos(0)
+fid(9): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(8): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Sat Sep 21 16:17:45 2024
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 819200 bytes [need 232K bytes if disable swap]
+
+used block: 30 [memory(30) file(0)]
+                 [ 8K(20) 64K(10) { total 800K bytes } ]
+overhead: (9538) bytes for (30) blocks [Average: (317) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 10(times) 140K(bytes) [30K bytes compressed data from file]
+access => 722690(times) 5687M(bytes)
+          [hit ratio: 99.9986%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog)
+used swap file number: (15)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (16)
+closeHead: (13)
+closeTail: (15)
+openCnt: (1)
+fid(15): fd(0) fileName(NULL)
+	mode(rb)	hot(13) cool(0) pos(0)
+fid(14): fd(33) fileName(/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog/_swap_0001#380378854#350625)
+	size(0) lastModTime(0) curModTime(1726953465)
+	mode(w+b)	hot(15) cool(13) pos(0)
+fid(13): fd(0) fileName(NULL)
+	mode(rb)	hot(14) cool(15) pos(0)
+fid(12): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(11): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(10): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(9): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(8): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Sat Sep 21 16:46:04 2024
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 2M bytes [need 240K bytes if disable swap]
+
+used block: 39 [memory(39) file(0)]
+                 [ 8K(26) 64K(13) { total 2M bytes } ]
+overhead: (9538) bytes for (39) blocks [Average: (244) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 13(times) 180K(bytes) [38K bytes compressed data from file]
+access => 1533431(times) 12035M(bytes)
+          [hit ratio: 99.9992%]
+
+tim

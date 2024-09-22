@@ -1,7 +1,3 @@
-/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/compressor/Comparator.sv
-/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/compressor/CompressedValues.sv
-/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/compressor/compinput.sv
-/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/compressor/compinput_tb.sv
-/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/compressor/compressor_top.sv
-/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/compressor/hashFunction.sv
-/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/compressor/tableofPtr.sv
+/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/decompressor/decompressor_top.sv
+/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/decompressor/decompressor_top_tb.sv
+/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/decompressor/history_buffer.sv

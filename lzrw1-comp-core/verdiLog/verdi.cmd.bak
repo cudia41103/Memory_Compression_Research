@@ -1,6 +1,86 @@
-debImport "-base"
+simSetSimulator "-vcssv" -exec \
+           "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv" \
+           -args
+debImport "-base" "-dbdir" \
+          "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir"
+debLoadSimResult \
+           /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/dump.fsdb
 wvCreateWindow
-wvSetPosition -win $_nWave2 {("G1" 0)}
-wvOpenFile -win $_nWave2 \
-           {/home/cudia2/Desktop/NSK Research/m_compression/lzrw1-compression-core/dump.fsdb}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "clock" -line 17 -pos 1 -win $_nTrace1
+srcSelect -signal "reset" -line 17 -pos 1 -win $_nTrace1
+srcSelect -signal "valid" -line 17 -pos 1 -win $_nTrace1
+srcSelect -signal "CurByte" -line 18 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcSetScope "compinput_tb.ctop" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcHBSelect "compinput_tb" -win $_nTrace1
+srcSetScope "compinput_tb" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "CurByte" -line 18 -pos 1 -win $_nTrace1
+srcAction -pos 17 14 3 -win $_nTrace1 -name "CurByte" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "m" -line 71 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "m" -line 71 -pos 1 -win $_nTrace1
+srcAction -pos 70 2 0 -win $_nTrace1 -name "m" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "s" -line 32 -pos 1 -win $_nTrace1
+srcAction -pos 31 2 0 -win $_nTrace1 -name "s" -ctrlKey off
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvDisplayGridCount -win $_nWave2 -off
+wvGetSignalClose -win $_nWave2
+wvReloadFile -win $_nWave2
+wvSetCursor -win $_nWave2 9.031810 -snap {("G1" 2)}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reset" -line 38 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reset" -line 38 -pos 1 -win $_nTrace1
+srcAction -pos 37 8 1 -win $_nTrace1 -name "reset" -ctrlKey off
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcSetScope "compinput_tb.ctop" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcHBSelect "compinput_tb.ctop.CV" -win $_nTrace1
+srcSetScope "compinput_tb.ctop.CV" -delim "." -win $_nTrace1
+debReload
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcSetScope "compinput_tb.ctop" -delim "." -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
+srcHBSelect "compinput_tb.ctop" -win $_nTrace1
 debExit

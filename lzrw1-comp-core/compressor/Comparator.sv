@@ -4,7 +4,7 @@ This compares amount of bytes that are the same.
 
 input ControlBit; used for debug
 input BytesAtOffset;  bytes at offset to compare
-input NextBytes; Current 16 bytes to compare
+input CurBytes; Current 16 bytes to compare
 output Length; amount of total chars that are the same between CurBytes and the toCompare(bytes at offset)
 
 

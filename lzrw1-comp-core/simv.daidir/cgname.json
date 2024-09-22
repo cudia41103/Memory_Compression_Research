@@ -5,11 +5,11 @@
         "module",
         1
     ],
-    "compinput_tb": [
-        "compinput_tb",
-        "nCyDm",
+    "decompressor_top_tb": [
+        "decompressor_top_tb",
+        "w6bxa",
         "module",
-        2
+        4
     ],
     "...MASTER...": [
         "SIM",

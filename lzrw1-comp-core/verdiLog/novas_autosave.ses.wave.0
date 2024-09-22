@@ -2,11 +2,11 @@ Magic 271485
 Revision Verdi_R-2020.12-SP1-1
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 25 1920 359 100 65
+viewPort 0 25 1920 246 100 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
-openDirFile -d / "" "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/dump.fsdb"
+openDirFile -d / "" "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/dump.fsdb"
 
 ; file time scale:
 ; fileTimeScale ### s|ms|us|ns|ps
@@ -16,7 +16,7 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 606.938960
+zoom 0.000000 256.000000
 cursor 10.000000
 marker 0.000000
 
@@ -46,11 +46,11 @@ curSTATUS ByChange
 
 
 addGroup "G1"
-activeDirFile "" "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/dump.fsdb"
-addSignal -h 15 /compinput_tb/ctop/offset[11:0]
-addSignal -h 15 -holdScope clock
+activeDirFile "" "/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/dump.fsdb"
+addSignal -h 15 /compinput_tb/clock
 addSignal -h 15 -holdScope reset
-addSignal -h 15 -holdScope Done
+addSignal -h 15 -holdScope valid
+addSignal -h 15 -holdScope m[31:0]
 addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status

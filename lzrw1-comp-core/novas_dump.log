@@ -130,7 +130,7 @@ VCS compile option:
  option[46]: /software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
  option[47]: timescale=1ns/1ns
 Chronologic Simulation VCS Release R-2020.12-SP1-1_Full64
-Linux 4.18.0-553.16.1.el8_10.x86_64 #1 SMP Thu Aug 1 04:16:12 EDT 2024 x86_64
+Linux 5.14.0-427.35.1.el9_4.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Aug 30 15:47:10 EDT 2024 x86_64
 CPU cores: 12
 Limit information:
 ======================================
@@ -141,80 +141,43 @@ stacksize		8192 kbytes
 coredumpsize		0 kbytes
 memoryuse		unlimited
 vmemoryuse		unlimited
-descriptors		262144
-memorylocked		64 kbytes
-maxproc		94939
+descriptors		524288
+memorylocked		8192 kbytes
+maxproc		61254
 ======================================
 (Special)Runtime environment variables:
 
 Runtime environment variables:
-VSCODE_GIT_ASKPASS_MAIN=/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/extensions/git/dist/askpass-main.js
-MODULEPATH=/usr/share/modulefiles:/usr/share/Modules/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/etc/modulefiles/env:/etc/modulefiles/class:/etc/modulefiles/ews_software
-__LMOD_STACK_apath=L3Vzci9iaW4vYWNyb3JlYWQ=
-_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpbIlN5bm9wc3lzX3g4Ni02NCJdID0gewpmbiA9ICIvZXRjL21vZHVsZWZpbGVzL2V3c19zb2Z0d2FyZS9TeW5vcHN5c194ODYtNjQvMjAyMS5sdWEiLApmdWxsTmFtZSA9ICJTeW5vcHN5c194ODYtNjQvMjAyMSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiU3lub3BzeXNfeDg2LTY0LzIwMjEiLAp3ViA9ICJeMDAwMDIwMjEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi91c3Ivc2hhcmUv
-SHELL=/bin/bash
+GDK_BACKEND=x11
+NO_AT_BRIDGE=1
 LMODARCH=x86_64
-LMOD_DIR=/usr/share/lmod/lmod/libexec
-_=/usr/bin/make
-OPENRAM=/class/ece411/OpenRAM
-HISTCONTROL=ignoredups
-_ModuleTable002_=bW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzIiwgIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwgIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCAiL2V0Yy9tb2R1bGVmaWxlcy9lbnYiLCAiL2V0Yy9tb2R1bGVmaWxlcy9jbGFzcyIsICIvZXRjL21vZHVsZWZpbGVzL2V3c19zb2Z0d2FyZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXNyL3NoYXJlL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvTW9kdWxlcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2Qv
-__LMOD_REF_COUNT_LM_LICENSE_FILE=27005@synopsys.webstore.illinois.edu:1
-FREEPDK45=/class/ece411/freepdk-45nm
-XDG_DATA_DIRS=/home/cudia2/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-LESSOPEN=||/usr/bin/lesspipe.sh %s
-KRB5CCNAME=KCM:
-SSH_CONNECTION=10.251.139.219 63252 192.17.9.166 22
-PATH=/software/Synopsys-2021_x86_64/wv/R-2020.12-SP1/bin:/software/Synopsys-2021_x86_64/vui/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/vtran/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/vgen/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/bin:/software/Synopsys-2021_x86_64/vc_static/R-2020.12-SP1-1/bin:/software/Synopsys-2021_x86_64/vcs-mx/O-2018.09-SP2-3/bin:/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/bin:/software/Synopsys-2021_x86_64/vc_ml_platform/2019.06/mlplatform/bin:/software/Synopsys-2021_x86_64/vcap/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/ufe_optional_spyglass-vcs/R-2020.12-SP1-1/SPYGLASS_HOME/bin:/software/Synopsys-2021_x86_64/txs/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/taurus_tsuprem4/R_2020.09/bin:/software/Synopsys-2021_x86_64/taurus_medici/	R_2020.09/bin:/software/Synopsys-2021_x86_64/syn/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/starrc/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/spyglass/R-2020.12-SP1-1/SPYGLASS_HOME/bin:/software/Synopsys-2021_x86_64/spx/R-2020.09-SP2/bin:/software/Synopsys-2021_x86_64/siliconsmart/R-2020.12-SP1/bin:/software/Synopsys-2021_x86_64/sentaurus/R_2020.09-SP1/bin:/software/Synopsys-2021_x86_64/raphael/R_2020.09a/bin:/software/Synopsys-2021_x86_64/prime/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/pcm_studio/R-2021.03/bin:/software/Synopsys-2021_x86_64/nt/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/mw/R-2020.09-SP4/bin/linux64:/software/Synopsys-2021_x86_64/mlwizard/R-2021.03-SP1/bin:/software/Synopsys-2021_x86_64/lc/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/laker/L-2020.06-3/bin:/software/Synopsys-2021_x86_64/idq/R-2020.09-SP4/linux64/iddq/bin:/software/Synopsys-2021_x86_64/identify/R-2021.03/bin:/software/Synopsys-2021_x86_64/icv_workbench/R-2020.09-SP2/bin:/software/Synopsys-2021_x86_64/icvalidator/R-2020.09-SP3-3/bin:/software/Synopsys-2021_x86_64/icc2/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/icc/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/hspice/R-2020.12-SP1/hspice/bin:/software/Synopsys-2021_x86_64/hsim/R-2020.12-SP1/hsimplus/bin:/software/Synopsys-2021_x86_64/fpga/R-2021.03/bin:/software/Synopsys-2021_x86_64/fm/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/finesim/R-2020.12-SP1-1/bin:/software/Synopsys-2021_x86_64/esp/R-2020.09-SP2/bin:/software/Synopsys-2021_x86_64/dftview/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/customcompiler/R-2020.12-SP1/bin:/software/Synopsys-2021_x86_64/coretools/R-2020.12-SP3/bin:/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/software/ews/bin:/class/ece411/riscv/bin:/class/ece411/verilator/bin:/class/ece411/riscv/bin:/class/ece411/verilator/bin
-__LMOD_REF_COUNT_PATH=/software/Synopsys-2021_x86_64/wv/R-2020.12-SP1/bin:1;/software/Synopsys-2021_x86_64/vui/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/vtran/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/vgen/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/vc_static/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/vcs-mx/O-2018.09-SP2-3/bin:1;/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/vc_ml_platform/2019.06/mlplatform/bin:1;/software/Synopsys-2021_x86_64/vcap/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/ufe_optional_spyglass-vcs/R-2020.12-SP1-1/SPYGLASS_HOME/bin:1;/software/Synopsys-2021_x86_64/txs/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/taurus_tsuprem4/R_2020.09/bin:1;/software/Synopsys-2021_x86_64/taurus_medici/	R_2020.09/bin:1;/software/Synopsys-2021_x86_64/syn/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/starrc/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/spyglass/R-2020.12-SP1-1/SPYGLASS_HOME/bin:1;/software/Synopsys-2021_x86_64/spx/R-2020.09-SP2/bin:1;/software/Synopsys-2021_x86_64/siliconsmart/R-2020.12-SP1/bin:1;/software/Synopsys-2021_x86_64/sentaurus/R_2020.09-SP1/bin:1;/software/Synopsys-2021_x86_64/raphael/R_2020.09a/bin:1;/software/Synopsys-2021_x86_64/prime/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/pcm_studio/R-2021.03/bin:1;/software/Synopsys-2021_x86_64/nt/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/mw/R-2020.09-SP4/bin/linux64:1;/software/Synopsys-2021_x86_64/mlwizard/R-2021.03-SP1/bin:1;/software/Synopsys-2021_x86_64/lc/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/laker/L-2020.06-3/bin:1;/software/Synopsys-2021_x86_64/idq/R-2020.09-SP4/linux64/iddq/bin:1;/software/Synopsys-2021_x86_64/identify/R-2021.03/bin:1;/software/Synopsys-2021_x86_64/icv_workbench/R-2020.09-SP2/bin:1;/software/Synopsys-2021_x86_64/icvalidator/R-2020.09-SP3-3/bin:1;/software/Synopsys-2021_x86_64/icc2/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/icc/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/hspice/R-2020.12-SP1/hspice/bin:1;/software/Synopsys-2021_x86_64/hsim/R-2020.12-SP1/hsimplus/bin:1;/software/Synopsys-2021_x86_64/fpga/R-2021.03/bin:1;/software/Synopsys-2021_x86_64/fm/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/finesim/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/esp/R-2020.09-SP2/bin:1;/software/Synopsys-2021_x86_64/dftview/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/customcompiler/R-2020.12-SP1/bin:1;/software/Synopsys-2021_x86_64/coretools/R-2020.12-SP3/bin:1;/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/bin/remote-cli:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/software/ews/bin:3;/class/ece411/riscv/bin:1;/class/ece411/verilator/bin:1
-LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
-LM_LICENSE_FILE=27005@synopsys.webstore.illinois.edu
-ECE411_GUI_TIMEOUT=1h
-XDG_RUNTIME_DIR=/run/user/1174256
-__LMOD_STACK_VCS_HOME=L3NvZnR3YXJlL1N5bm9wc3lzLTIwMjFfeDg2XzY0L3Zjcy9SLTIwMjAuMTItU1AxLTE=
-FPATH=/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.5.1/functions:/usr/share/lmod/lmod/init/ksh_funcs
-BASH_ENV=/usr/share/lmod/lmod/init/bash
-_ModuleTable003_=bG1vZC9tb2R1bGVmaWxlcy9Db3JlOi9ldGMvbW9kdWxlZmlsZXMvZW52Oi9ldGMvbW9kdWxlZmlsZXMvY2xhc3M6L2V0Yy9tb2R1bGVmaWxlcy9ld3Nfc29mdHdhcmUiLAp9Cg==
-__LMOD_STACK_VERDI_HOME=L3NvZnR3YXJlL1N5bm9wc3lzLTIwMjFfeDg2XzY0L3ZlcmRpL1ItMjAyMC4xMi1TUDEtMQ==
-LMOD_VERSION=8.7.48
-SOFTPATH=/software
-LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
-__LMOD_REF_COUNT_LD_LIBRARY_PATH=/software/Synopsys-2021_x86_64/syn/R-2020.09-SP4/linux64/tcl/lib:1;/class/ece411/riscv/lib:1;/class/ece411/riscv/lib64:1;:1
-which_declare=declare -f
-SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
-HOME=/home/cudia2
-VCS_HOME=/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1
-PWD=/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core
-VSCODE_IPC_HOOK_CLI=/run/user/1174256/vscode-ipc-c681bc77-4c0c-463c-ada3-d67aef3be47d.sock
-VERDI_HOME=/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1
-MANPATH=/usr/share/lmod/lmod/share/man:
-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1174256/bus
-LD_LIBRARY_PATH=/software/Synopsys-2021_x86_64/syn/R-2020.09-SP4/linux64/tcl/lib:/class/ece411/riscv/lib:/class/ece411/riscv/lib64:::/class/ece411/riscv/lib:/class/ece411/riscv/lib64:
-__LMOD_STACK_SYNOPSYS_LC_ROOT=L3NvZnR3YXJlL1N5bm9wc3lzLTIwMjFfeDg2XzY0L2xjL1ItMjAyMC4wOS1TUDU=
-MODULESHOME=/usr/share/lmod/lmod
-LOGNAME=cudia2
-MSI2LMP_LIBRARY=/usr/share/lammps/frc_files
-SELINUX_LEVEL_REQUESTED=
-LMOD_sys=Linux
-HOSTNAME=linux-ssh-05.ews.illinois.edu
-LMOD_arch=x86_64
-VSCODE_GIT_IPC_HANDLE=/run/user/1174256/vscode-git-c4b32b7b4d.sock
-SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-COLORTERM=truecolor
-_ModuleTable_Sz_=3
+__LMOD_STACK_acroread_path=L3Vzci9iaW4vYWNyb3JlYWQ=
+LMOD_SETTARG_FULL_SUPPORT=no
 VCS_ARCH_OVERRIDE=linux
-SHLVL=5
-DW=/software/Synopsys-2021_x86_64/icc/R-2020.09-SP4/dw
-XDG_SESSION_ID=96
-USER=cudia2
-MODULEPATH_ROOT=/usr/share/modulefiles
-SYNOPSYS_LC_ROOT=/software/Synopsys-2021_x86_64/lc/R-2020.09-SP5
-OLDPWD=/home/cudia2/Desktop/NSK_Research/m_compression
+WINDOWPATH=2
+GDM_LANG=en_US.UTF-8
+_ModuleTable003_=L2xtb2QvbW9kdWxlZmlsZXMvQ29yZTovZXRjL21vZHVsZWZpbGVzL2VudjovZXRjL21vZHVsZWZpbGVzL2NsYXNzOi9ldGMvbW9kdWxlZmlsZXMvZXdzX3NvZnR3YXJlIiwKfQo=
+FPATH=/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.8/functions:/usr/share/lmod/lmod/init/ksh_funcs
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
-TERM_PROGRAM=vscode
-BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+LMOD_ROOT=/usr/share/lmod
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
 }
-VSCODE_GIT_ASKPASS_NODE=/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/node
+PWD=/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core
+HOSTNAME=gelib-4c-35.ews.illinois.edu
+MAIL=/var/spool/mail/cudia2
+XDG_DATA_DIRS=/home/cudia2/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
+OLDPWD=/home/cudia2/Desktop/NSK_Research
+LANG=en_US.UTF-8
+__LMOD_REF_COUNT_PATH=/software/Synopsys-2021_x86_64/wv/R-2020.12-SP1/bin:1;/software/Synopsys-2021_x86_64/vui/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/vtran/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/vgen/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/vc_static/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/vcs-mx/O-2018.09-SP2-3/bin:1;/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/vc_ml_platform/2019.06/mlplatform/bin:1;/software/Synopsys-2021_x86_64/vcap/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/ufe_optional_spyglass-vcs/R-2020.12-SP1-1/SPYGLASS_HOME/bin:1;/software/Synopsys-2021_x86_64/txs/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/taurus_tsuprem4/R_2020.09/bin:1;/software/Synopsys-2021_x86_64/taurus_medici/	R_2020.09/bin:1;/software/Synopsys-2021_x86_64/syn/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/starrc/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/spyglass/R-2020.12-SP1-1/SPYGLASS_HOME/bin:1;/software/Synopsys-2021_x86_64/spx/R-2020.09-SP2/bin:1;/software/Synopsys-2021_x86_64/siliconsmart/R-2020.12-SP1/bin:1;/software/Synopsys-2021_x86_64/sentaurus/R_2020.09-SP1/bin:1;/software/Synopsys-2021_x86_64/raphael/R_2020.09a/bin:1;/software/Synopsys-2021_x86_64/prime/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/pcm_studio/R-2021.03/bin:1;/software/Synopsys-2021_x86_64/nt/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/mw/R-2020.09-SP4/bin/linux64:1;/software/Synopsys-2021_x86_64/mlwizard/R-2021.03-SP1/bin:1;/software/Synopsys-2021_x86_64/lc/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/laker/L-2020.06-3/bin:1;/software/Synopsys-2021_x86_64/idq/R-2020.09-SP4/linux64/iddq/bin:1;/software/Synopsys-2021_x86_64/identify/R-2021.03/bin:1;/software/Synopsys-2021_x86_64/icv_workbench/R-2020.09-SP2/bin:1;/software/Synopsys-2021_x86_64/icvalidator/R-2020.09-SP3-3/bin:1;/software/Synopsys-2021_x86_64/icc2/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/icc/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/hspice/R-2020.12-SP1/hspice/bin:1;/software/Synopsys-2021_x86_64/hsim/R-2020.12-SP1/hsimplus/bin:1;/software/Synopsys-2021_x86_64/fpga/R-2021.03/bin:1;/software/Synopsys-2021_x86_64/fm/R-2020.09-SP5/bin:1;/software/Synopsys-2021_x86_64/finesim/R-2020.12-SP1-1/bin:1;/software/Synopsys-2021_x86_64/esp/R-2020.09-SP2/bin:1;/software/Synopsys-2021_x86_64/dftview/R-2020.09-SP4/bin:1;/software/Synopsys-2021_x86_64/customcompiler/R-2020.12-SP1/bin:1;/software/Synopsys-2021_x86_64/coretools/R-2020.12-SP3/bin:1;/usr/local/bin:1;/usr/local/sbin:1;/usr/bin:1;/usr/sbin:1;/software/ews/bin:3;/class/ece411/riscv/bin:1;/class/ece411/verilator/bin:1
+XAUTHORITY=/run/user/1174256/gdm/Xauthority
+OPENRAM=/class/ece411/OpenRAM
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+GNOME_TERMINAL_SERVICE=:1.76
+MAKEFLAGS=
+DISTARCH=Linux-x86_64
+__LMOD_STACK_VERDI_HOME=L3NvZnR3YXJlL1N5bm9wc3lzLTIwMjFfeDg2XzY0L3ZlcmRpL1ItMjAyMC4xMi1TUDEtMQ==
+LM_LICENSE_FILE=27005@synopsys.webstore.illinois.edu
 BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
  case "$-" in 
  *v*x*)
@@ -241,36 +204,84 @@ BASH_FUNC_module%%=() {  if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
  unset __lmod_sh_dbg;
  return $__lmod_my_status
 }
-MAKEFLAGS=
+SOFTPATH=/software
+_ModuleTable_Sz_=3
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LESSOPEN=||/usr/bin/lesspipe.sh %s
 MFLAGS=
-SSH_CLIENT=10.251.139.219 63252 22
-TERM_PROGRAM_VERSION=1.93.1
-MAIL=/var/spool/mail/cudia2
-LOADEDMODULES=Synopsys_x86-64/2021
-DISTARCH=Linux-x86_64
-MAKE_TERMOUT=/dev/pts/3
-BROWSER=/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/bin/helpers/browser.sh
-BASH_FUNC_which%%=() {  ( alias;
- eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
-}
-LMOD_PKG=/usr/share/lmod/lmod
-acroread_path=/usr/bin/acroread
-GIT_ASKPASS=/home/cudia2/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/extensions/git/dist/askpass.sh
-SELINUX_USE_CURRENT_RANGE=
-_LMFILES_=/etc/modulefiles/ews_software/Synopsys_x86-64/2021.lua
-LAMMPS_POTENTIALS=/usr/share/lammps/potentials
-SSL_CERT_DIR=/etc/pki/tls/certs
-SELINUX_ROLE_REQUESTED=
-CBP2016=/class/ece411/cbp2016
+SSH_AUTH_SOCK=/run/user/1174256/keyring/ssh
 HISTSIZE=1000
-__LMOD_STACK_acroread_path=L3Vzci9iaW4vYWNyb3JlYWQ=
-LMOD_ROOT=/usr/share/lmod
-LMOD_SETTARG_FULL_SUPPORT=no
-apath=/usr/bin/acroread
-MAKE_TERMERR=/dev/pts/3
+GIT_ASKPASS=/usr/share/code/resources/app/extensions/git/dist/askpass.sh
+XDG_SESSION_DESKTOP=gnome
+__LMOD_REF_COUNT_LM_LICENSE_FILE=27005@synopsys.webstore.illinois.edu:1
+KRB5CCNAME=KCM:
+XDG_SESSION_TYPE=x11
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/58763,unix/unix:/tmp/.ICE-unix/58763
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/software/Synopsys-2021_x86_64/syn/R-2020.09-SP4/linux64/tcl/lib:1;/class/ece411/riscv/lib:1;/class/ece411/riscv/lib64:1;:1
+MANPATH=/usr/share/lmod/lmod/share/man:
+VERDI_HOME=/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1
+CBP2016=/class/ece411/cbp2016
+MODULEPATH=/usr/share/modulefiles:/usr/share/Modules/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/etc/modulefiles/env:/etc/modulefiles/class:/etc/modulefiles/ews_software
+CHROME_DESKTOP=code-url-handler.desktop
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1174256/bus
+BASH_FUNC_ml%%=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+SHELL=/bin/bash
 __LMOD_REF_COUNT_MODULEPATH=/usr/share/modulefiles:1;/usr/share/Modules/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/etc/modulefiles/env:1;/etc/modulefiles/class:1;/etc/modulefiles/ews_software:1
-LANG=en_US.UTF-8
+XMODIFIERS=@im=ibus
+LD_LIBRARY_PATH=/custom/lib:D_LIBRARY_PATH
+SHLVL=3
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/322836a2_f290_47a4_b2a9_5eaaec42dcf4
+PATH=/software/Synopsys-2021_x86_64/wv/R-2020.12-SP1/bin:/software/Synopsys-2021_x86_64/vui/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/vtran/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/vgen/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/bin:/software/Synopsys-2021_x86_64/vc_static/R-2020.12-SP1-1/bin:/software/Synopsys-2021_x86_64/vcs-mx/O-2018.09-SP2-3/bin:/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/bin:/software/Synopsys-2021_x86_64/vc_ml_platform/2019.06/mlplatform/bin:/software/Synopsys-2021_x86_64/vcap/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/ufe_optional_spyglass-vcs/R-2020.12-SP1-1/SPYGLASS_HOME/bin:/software/Synopsys-2021_x86_64/txs/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/taurus_tsuprem4/R_2020.09/bin:/software/Synopsys-2021_x86_64/taurus_medici/	R_2020.09/bin:/software/Synopsys-2021_x86_64/syn/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/starrc/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/spyglass/R-2020.12-SP1-1/SPYGLASS_HOME/bin:/software/Synopsys-2021_x86_64/spx/R-2020.09-SP2/bin:/software/Synopsys-2021_x86_64/siliconsmart/R-2020.12-SP1/bin:/software/Synopsys-2021_x86_64/sentaurus/R_2020.09-SP1/bin:/software/Synopsys-2021_x86_64/raphael/R_2020.09a/bin:/software/Synopsys-2021_x86_64/prime/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/pcm_studio/R-2021.03/bin:/software/Synopsys-2021_x86_64/nt/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/mw/R-2020.09-SP4/bin/linux64:/software/Synopsys-2021_x86_64/mlwizard/R-2021.03-SP1/bin:/software/Synopsys-2021_x86_64/lc/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/laker/L-2020.06-3/bin:/software/Synopsys-2021_x86_64/idq/R-2020.09-SP4/linux64/iddq/bin:/software/Synopsys-2021_x86_64/identify/R-2021.03/bin:/software/Synopsys-2021_x86_64/icv_workbench/R-2020.09-SP2/bin:/software/Synopsys-2021_x86_64/icvalidator/R-2020.09-SP3-3/bin:/software/Synopsys-2021_x86_64/icc2/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/icc/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/hspice/R-2020.12-SP1/hspice/bin:/software/Synopsys-2021_x86_64/hsim/R-2020.12-SP1/hsimplus/bin:/software/Synopsys-2021_x86_64/fpga/R-2021.03/bin:/software/Synopsys-2021_x86_64/fm/R-2020.09-SP5/bin:/software/Synopsys-2021_x86_64/finesim/R-2020.12-SP1-1/bin:/software/Synopsys-2021_x86_64/esp/R-2020.09-SP2/bin:/software/Synopsys-2021_x86_64/dftview/R-2020.09-SP4/bin:/software/Synopsys-2021_x86_64/customcompiler/R-2020.12-SP1/bin:/software/Synopsys-2021_x86_64/coretools/R-2020.12-SP3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/software/ews/bin:/class/ece411/riscv/bin:/class/ece411/verilator/bin:/class/ece411/riscv/bin:/class/ece411/verilator/bin
+apath=/usr/bin/acroread
+MODULESHOME=/usr/share/lmod/lmod
+VSCODE_GIT_IPC_HANDLE=/run/user/1174256/vscode-git-716704a3b2.sock
+VSCODE_GIT_ASKPASS_NODE=/usr/share/code/code
+__LMOD_STACK_apath=L3Vzci9iaW4vYWNyb3JlYWQ=
+LMOD_sys=Linux
+acroread_path=/usr/bin/acroread
+LOADEDMODULES=Synopsys_x86-64/2021
+VSCODE_GIT_ASKPASS_MAIN=/usr/share/code/resources/app/extensions/git/dist/askpass-main.js
+__LMOD_STACK_VCS_HOME=L3NvZnR3YXJlL1N5bm9wc3lzLTIwMjFfeDg2XzY0L3Zjcy9SLTIwMjAuMTItU1AxLTE=
+DW=/software/Synopsys-2021_x86_64/icc/R-2020.09-SP4/dw
+USERNAME=cudia2
+TERM_PROGRAM=vscode
+XDG_CURRENT_DESKTOP=GNOME
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:
+DESKTOP_SESSION=gnome
+ORIGINAL_XDG_CURRENT_DESKTOP=GNOME
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpbIlN5bm9wc3lzX3g4Ni02NCJdID0gewpmbiA9ICIvZXRjL21vZHVsZWZpbGVzL2V3c19zb2Z0d2FyZS9TeW5vcHN5c194ODYtNjQvMjAyMS5sdWEiLApmdWxsTmFtZSA9ICJTeW5vcHN5c194ODYtNjQvMjAyMSIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiU3lub3BzeXNfeDg2LTY0LzIwMjEiLAp3ViA9ICJeMDAwMDIwMjEuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi91c3Ivc2hhcmUv
+LOGNAME=cudia2
+_LMFILES_=/etc/modulefiles/ews_software/Synopsys_x86-64/2021.lua
+BASH_ENV=/usr/share/lmod/lmod/init/bash
+SYSTEMD_EXEC_PID=60006
+MODULEPATH_ROOT=/usr/share/modulefiles
+HISTCONTROL=ignoredups
+DISPLAY=:1
+USER=cudia2
+_ModuleTable002_=bW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9Nb2R1bGVzL21vZHVsZWZpbGVzIiwgIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwgIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiCiwgIi9ldGMvbW9kdWxlZmlsZXMvZW52IiwgIi9ldGMvbW9kdWxlZmlsZXMvY2xhc3MiLCAiL2V0Yy9tb2R1bGVmaWxlcy9ld3Nfc29mdHdhcmUiLAp9LApzeXN0ZW1CYXNlTVBBVEggPSAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXNyL3NoYXJlL01vZHVsZXMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9k
+VCS_HOME=/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1
+which_declare=declare -f
+LMOD_arch=x86_64
+_=/usr/bin/make
+MAKE_TERMOUT=/dev/pts/5
+ECE411_GUI_TIMEOUT=1h
+XDG_RUNTIME_DIR=/run/user/1174256
+SYNOPSYS_LC_ROOT=/software/Synopsys-2021_x86_64/lc/R-2020.09-SP5
+COLORTERM=truecolor
+MAKE_TERMERR=/dev/pts/5
+XDG_SESSION_CLASS=user
+HOME=/home/cudia2
+QT_IM_MODULE=ibus
 TERM=xterm-256color
+FREEPDK45=/class/ece411/freepdk-45nm
+LMOD_PKG=/usr/share/lmod/lmod
+__LMOD_STACK_SYNOPSYS_LC_ROOT=L3NvZnR3YXJlL1N5bm9wc3lzLTIwMjFfeDg2XzY0L2xjL1ItMjAyMC4wOS1TUDU=
+VTE_VERSION=6402
+XDG_MENU_PREFIX=gnome-
+TERM_PROGRAM_VERSION=1.93.1
+LMOD_VERSION=8.7.48
+GDMSESSION=gnome
 MAKELEVEL=1
 VCS_PATHMAP_PRELOAD_DONE=1
 VCS_STACK_EXEC=true
@@ -278,77 +289,78 @@ VCS_EXEC_DONE=1
 LC_ALL=C
 DVE=/software/Synopsys-2021_x86_64/vcs/R-2020.12-SP1-1/gui/dve
 SPECMAN_OUTPUT_TO_TTY=1
-FLEXLM_BORROWFILE=/home/cudia2/.linux-ssh-05.ews.illinois.edu-borrow.txt
+FLEXLM_BORROWFILE=/home/cudia2/.gelib-4c-35.ews.illinois.edu-borrow.txt
 Runtime command line arguments:
 argv[0]=./simv
-255 profile - 100
-          CPU/Mem usage: 0.050 sys,  0.310 user,  308.38M mem
-256 Elapsed time:    0:00:00    Fri Sep 20 19:28:45 2024
-257 pliAppInit
-258 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
-259 FSDB_GATE is set.
-260 FSDB_RTL is set.
-261 FSDB_FIELDTYPE is set.
-262 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
-263 Enable Parallel Dumping.
-264 pliAppMiscSet: New Sim Round
-265 pliEntryInit
-266 LIBSSCORE=found /software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/share/PLI/lib/LINUXAMD64/libsscore_vcs202012.so through $NOVAS_HOME setting.
-267 FSDB Dumper for VCS, Release Verdi_R-2020.12-SP1-1, Linux x86_64/64bit, 04/20/2021
-268 (C) 1996 - 2021 by Synopsys, Inc.
-269 sps_call_fsdbDumpfile_main at 0 : compressor/compinput_tb.sv(47)
-270 argv[0]: (dump.fsdb)
-271 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
-272 *Verdi* : Create FSDB file 'dump.fsdb'
-273 [spi_vcs_vd_ppi_create_root]: no upf option
-274 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
-275 compile option from '/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/vcs_rebuild'.
-276   "vcs '-full64' '-lca' '-sverilog' '+lint=all,noNS' '-timescale=1ns/1ns' '-debug_acc+all' '-kdb' '-fsdb' '-suppress=LCA_FEATURES_ENABLED' 'compressor/Comparator.sv' 'compressor/compinput.sv' 'compressor/hashFunction.sv' 'compressor/tableofPtr.sv' 'compressor/CompressedValues.sv' 'compressor/compressor_top.sv' 'compressor/compinput_tb.sv' '-o' 'simv' 2>&1"
-277 DVDI_is_vir_unload_enabled is enable
-278 FSDB_VCS_ENABLE_NATIVE_VC is enable
-279 sps_call_fsdbDumpvars_vd_main at 0 : compressor/compinput_tb.sv(48)
-280 argv[0]: (0)
-281 *Verdi* : Begin traversing the scopes, layer (0).
-282 *Verdi* : End of traversing.
-283 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.320 user,  407.56M mem
-                   incr: 0.000 sys,  0.000 user,  7.99M mem
-                   accu: 0.000 sys,  0.000 user,  7.99M mem
-              accu incr: 0.000 sys,  0.000 user,  7.99M mem
+266 profile - 100
+          CPU/Mem usage: 0.010 sys,  0.160 user,  206.04M mem
+267 Elapsed time:    0:00:00    Sat Sep 21 18:31:39 2024
+268 pliAppInit
+269 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+270 FSDB_GATE is set.
+271 FSDB_RTL is set.
+272 FSDB_FIELDTYPE is set.
+273 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+274 Enable Parallel Dumping.
+275 pliAppMiscSet: New Sim Round
+276 pliEntryInit
+277 LIBSSCORE=found /software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/share/PLI/lib/LINUXAMD64/libsscore_vcs202012.so through $NOVAS_HOME setting.
+278 FSDB Dumper for VCS, Release Verdi_R-2020.12-SP1-1, Linux x86_64/64bit, 04/20/2021
+279 (C) 1996 - 2021 by Synopsys, Inc.
+280 sps_call_fsdbDumpfile_main at 0 : compressor/compinput_tb.sv(47)
+281 argv[0]: (dump.fsdb)
+282 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+283 *Verdi* : Create FSDB file 'dump.fsdb'
+284 [spi_vcs_vd_ppi_create_root]: no upf option
+285 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+286 compile option from '/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv.daidir/vcs_rebuild'.
+287   "vcs '-full64' '-lca' '-sverilog' '+lint=all,noNS' '-timescale=1ns/1ns' '-debug_acc+all' '-kdb' '-fsdb' '-suppress=LCA_FEATURES_ENABLED' 'compressor/Comparator.sv' 'compressor/compinput.sv' 'compressor/hashFunction.sv' 'compressor/tableofPtr.sv' 'compressor/CompressedValues.sv' 'compressor/compressor_top.sv' 'compressor/compinput_tb.sv' '-o' 'simv' 2>&1"
+288 DVDI_is_vir_unload_enabled is enable
+289 FSDB_VCS_ENABLE_NATIVE_VC is enable
+290 sps_call_fsdbDumpvars_vd_main at 0 : compressor/compinput_tb.sv(48)
+291 argv[0]: (0)
+292 argv[1]: (handle) compinput_tb
+293 *Verdi* : Begin traversing the scope (compinput_tb), layer (0).
+294 *Verdi* : End of traversing.
+295 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.020 sys,  0.170 user,  305.23M mem
+                   incr: 0.000 sys,  0.010 user,  7.36M mem
+                   accu: 0.000 sys,  0.010 user,  7.36M mem
+              accu incr: 0.000 sys,  0.010 user,  7.36M mem
 
           Count usage: 78 var,  78 idcode,  32 callback
                  incr: 78 var,  78 idcode,  32 callback
                  accu: 78 var,  78 idcode,  32 callback
             accu incr: 78 var,  78 idcode,  32 callback
-284 Elapsed time:    0:00:00    Fri Sep 20 19:28:45 2024
-285 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.320 user,  408.61M mem
+296 Elapsed time:    0:00:00    Sat Sep 21 18:31:39 2024
+297 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.020 sys,  0.170 user,  306.28M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.000 sys,  0.000 user,  9.04M mem
+                   accu: 0.000 sys,  0.010 user,  8.42M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
           Count usage: 78 var,  78 idcode,  32 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 78 var,  78 idcode,  32 callback
             accu incr: 0 var,  0 idcode,  0 callback
-286 Elapsed time:    0:00:00    Fri Sep 20 19:28:45 2024
-287 End of simulation at 23290590
-288 Memory usage: 553.325 M
-289 Elapsed time:    0:00:04    Fri Sep 20 19:28:49 2024
-290 Begin FSDB profile info:
-291 FSDB Writer : bc1(4658125) bcn(46) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.013197) io wait(0.000000) theadpool wait(0.000000)
+298 Elapsed time:    0:00:00    Sat Sep 21 18:31:39 2024
+299 End of simulation at 6018485
+300 Memory usage: 450.994 M
+301 Elapsed time:    0:00:02    Sat Sep 21 18:31:41 2024
+302 Begin FSDB profile info:
+303 FSDB Writer : bc1(1203710) bcn(1817) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.009669) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-292 End FSDB profile info
-293 FSDB closed. Name: dump.fsdb Size: 11617
-294 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-295                      - BlockUsed:61 Acquire:9316257 BufferUsed:116453344
-296                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:59
-297                      - MainProducerTime:2.471645615 TotalConsumerTime:0.451458751
-298                      - ElapsedTime:3.771391000
-299 Producer   0 profile - BlockUsed:61 Acquire:9316257 BufferUsed:116453344
-300 Consumer   0 profile - Affinity:-1 CPUTime:0.451458751 LifeTime:3.585694224 (0.13%)
-301                      - BlockUsed:61 Acquire:9316257 BufferUsed:116453344
-302 SimExit
-303 Elapsed time:    0:00:04    Fri Sep 20 19:28:49 2024
-304 Sim process exit
+304 End FSDB profile info
+305 FSDB closed. Name: dump.fsdb Size: 12456
+306 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+307                      - BlockUsed:17 Acquire:2409192 BufferUsed:30118361
+308                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:15
+309                      - MainProducerTime:0.437356190 TotalConsumerTime:0.040202760
+310                      - ElapsedTime:1.740880000
+311 Producer   0 profile - BlockUsed:17 Acquire:2409192 BufferUsed:30118361
+312 Consumer   0 profile - Affinity:-1 CPUTime:0.040202760 LifeTime:1.601948759 (0.03%)
+313                      - BlockUsed:17 Acquire:2409192 BufferUsed:30118361
+314 SimExit
+315 Elapsed time:    0:00:02    Sat Sep 21 18:31:41 2024
+316 Sim process exit

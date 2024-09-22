@@ -1,0 +1,94 @@
+Thread 7 (Thread 0x7f4c0fa15700 (LWP 352777)):
+#0  0x00007f4c1ba1348c in pthread_cond_wait@@GLIBC_2.3.2 () at /lib64/libpthread.so.0
+#1  0x0000000009bfd983 in ffrSynchronizer::CondWait(int) ()
+#2  0x0000000009d08f8e in ffrObject::LoadThread(void*) ()
+#3  0x000000000a026304 in sdp_wrap_start_routine ()
+#4  0x00007f4c1ba0d1ca in start_thread () at /lib64/libpthread.so.0
+#5  0x00007f4c18c9e8d3 in clone () at /lib64/libc.so.6
+Thread 6 (Thread 0x7f4c0f414700 (LWP 352776)):
+#0  0x00007f4c1ba1348c in pthread_cond_wait@@GLIBC_2.3.2 () at /lib64/libpthread.so.0
+#1  0x0000000009bfd983 in ffrSynchronizer::CondWait(int) ()
+#2  0x0000000009d08f8e in ffrObject::LoadThread(void*) ()
+#3  0x000000000a026304 in sdp_wrap_start_routine ()
+#4  0x00007f4c1ba0d1ca in start_thread () at /lib64/libpthread.so.0
+#5  0x00007f4c18c9e8d3 in clone () at /lib64/libc.so.6
+Thread 5 (Thread 0x7f4c0ee13700 (LWP 352775)):
+#0  0x00007f4c1ba1348c in pthread_cond_wait@@GLIBC_2.3.2 () at /lib64/libpthread.so.0
+#1  0x0000000009bfd983 in ffrSynchronizer::CondWait(int) ()
+#2  0x0000000009d08f8e in ffrObject::LoadThread(void*) ()
+#3  0x000000000a026304 in sdp_wrap_start_routine ()
+#4  0x00007f4c1ba0d1ca in start_thread () at /lib64/libpthread.so.0
+#5  0x00007f4c18c9e8d3 in clone () at /lib64/libc.so.6
+Thread 4 (Thread 0x7f4c0e812700 (LWP 352774)):
+#0  0x00007f4c1ba1348c in pthread_cond_wait@@GLIBC_2.3.2 () at /lib64/libpthread.so.0
+#1  0x0000000009bfd983 in ffrSynchronizer::CondWait(int) ()
+#2  0x0000000009d08f8e in ffrObject::LoadThread(void*) ()
+#3  0x000000000a026304 in sdp_wrap_start_routine ()
+#4  0x00007f4c1ba0d1ca in start_thread () at /lib64/libpthread.so.0
+#5  0x00007f4c18c9e8d3 in clone () at /lib64/libc.so.6
+Thread 3 (Thread 0x7f4c0d7d5700 (LWP 351199)):
+#0  0x00007f4c18d9a1ff in select () at /lib64/libc.so.6
+#1  0x0000000009f845b0 in NotifierThreadProc ()
+#2  0x000000000a026304 in sdp_wrap_start_routine ()
+#3  0x00007f4c1ba0d1ca in start_thread () at /lib64/libpthread.so.0
+#4  0x00007f4c18c9e8d3 in clone () at /lib64/libc.so.6
+Thread 2 (Thread 0x7f4c15625700 (LWP 350659)):
+#0  0x00007f4c18d6d098 in nanosleep () at /lib64/libc.so.6
+#1  0x00007f4c18d6cf9e in sleep () at /lib64/libc.so.6
+#2  0x0000000007a2d9c2 in LicenseCheckUtility ()
+#3  0x000000000a026304 in sdp_wrap_start_routine ()
+#4  0x00007f4c1ba0d1ca in start_thread () at /lib64/libpthread.so.0
+#5  0x00007f4c18c9e8d3 in clone () at /lib64/libc.so.6
+Thread 1 (Thread 0x7f4c20967140 (LWP 350625)):
+#0  0x00007f4c18d93534 in read () at /lib64/libc.so.6
+#1  0x00007f4c18cf7658 in __GI__IO_file_underflow () at /lib64/libc.so.6
+#2  0x00007f4c18cf87b6 in _IO_default_uflow () at /lib64/libc.so.6
+#3  0x00007f4c18cec05a in _IO_getline_info () at /lib64/libc.so.6
+#4  0x00007f4c18ceb05f in fgets () at /lib64/libc.so.6
+#5  0x000000000a128d41 in _sys_fgets ()
+#6  0x000000000a0b2acb in sysGetCallStack ()
+#7  0x0000000009c188e9 in ErrorMessage(ffrErrorSeverity, char*, char*, char*, int) ()
+#8  0x0000000009cfb5e9 in ffrRealObject::LoadPrimarySignalArrayByTimeRange(unsigned int, long long*, fsdbXTag&, fsdbXTag&) ()
+#9  0x0000000009cfc28c in ffrRealObject::ffrLoadSecondaryVarVCOnDemand(ffrVar*, void*&, fsdbXTag*, fsdbXTag*, char, char, char) ()
+#10 0x0000000009b92e82 in ffrRealObject::ReadOrComputeVCOnDemand(ffrVar*, void*&, fsdbXTag*, fsdbXTag*, char, char, char) ()
+#11 0x0000000009b5bd69 in ffrVCIterOne::GotoXTagLODThreadSafe(void*, int*) ()
+#12 0x0000000009b5c027 in ffrVCIterOne::__GotoXTagLODThreadSafe(ffrVCIterOne*, void*, int*) ()
+#13 0x0000000009b5e899 in ffrVCIterOne::ffrGotoXTag(void*, int*) ()
+#14 0x0000000009b74541 in ffrVCIterOne::ffrGetXTagVal(void*, ffrSignalValueInfo*) ()
+#15 0x0000000008a60fb4 in fsdbBaseAdapter_C::_get_value_and_pattern_by_tag(HybridTag_C&, void const*&, daValuePattern_E&, char&, char&) ()
+#16 0x0000000008ab110e in ffAccess_C::_getSignalTransitionByVchDirectlyToTag(daSignal_C*, HybridTag_C&, char**, char**, char**, TransitionType_E*, char, daDisplayFormat_E, daDisplayNotation_E, ulString&, ulString&, ulString&, ulString&, ulString&, ulString&, Allocator_R&, daValueChangeHandle_C*) ()
+#17 0x0000000008ab2168 in ffAccess_C::getSignalTransitionBySignal(daSignal_C*, HybridTag_C&, char**, char**, char**, TransitionType_E*, char, daDisplayFormat_E, daDisplayNotation_E, ulPtrList*, char) ()
+#18 0x0000000008aaf647 in ffAccess_C::getSignalTransition(ulUSN&, HybridTag_C&, char**, char**, char**, TransitionType_E*, char, daDisplayFormat_E, daDisplayNotation_E, ulPtrList*, char) ()
+#19 0x0000000007230247 in ffSyncUtil_C::_da_getSignalTransition(ulUSN&, HybridTag_C&, char**, char**, char**, TransitionType_E*, char, daDisplayFormat_E, daDisplayNotation_E, ulPtrList*, char) ()
+#20 0x0000000007230697 in ffSyncUtil_C::getSignalTransition(ulUSN&, HybridTag_C&, char**, char**, char**, TransitionType_E*, char, daDisplayFormat_E, daDisplayNotation_E, ulPtrList*, ffSyncAnttOrder_E, char) ()
+#21 0x0000000007225a6c in ffSync::getSignalTransitionByTime(ulUSN&, HybridTag_C&, char**, char**, char**, TransitionType_E*, char, daDisplayFormat_E, daDisplayNotation_E, ulPtrList*, ffSyncAnttOrder_E, char) ()
+#22 0x00000000070116e2 in srcAnnotUtil_C::_GetValueStrByUSN(HybridTag_C*, ulUSN&, char, ulPtrList*, char) ()
+#23 0x0000000007011a41 in srcAnnotUtil_C::_GetValueStrByUSN(ulUSN&, char, ulPtrList*) ()
+#24 0x0000000007011a80 in srcAnnotUtil_C::GetAnnotationStrByUSN(ulUSN&, char, ulPtrList*, char) ()
+#25 0x0000000006fd5dac in srcAnnotHdl_C::_GetAnnotationStrByUSN(ulUSN&, char, char, ulPtrList*, char) ()
+#26 0x0000000006fd6302 in srcAnnotHdl_C::_GetOneAnnotValue(ulString&, void*, ulUSN&, textWord*, char, char, char, char) ()
+#27 0x0000000006fd24ce in srcAnnotHdl_C::GetSignalValue(ulString&, void*, ulUSN&, textWord*, char, char, char, char) ()
+#28 0x000000000702b92e in srcDrawHdl_C::_GetDownAnnotTip(textWord*, textLine*, int, ulString&) ()
+#29 0x000000000702e381 in srcDrawHdl_C::_GetSignalTip(textWord*, textLine*, ulString&, ulString&, int, char) ()
+#30 0x000000000702dbde in srcDrawHdl_C::GetTip(wtTextSelectCBStru&, ulString&, ulString&) ()
+#31 0x0000000004a0ecd3 in textActHdl_V::GetTip(nvfwTextView_C*, wtTextSelectCBStru&, ulString&, ulString&) ()
+#32 0x0000000004a0a6c5 in srcActHdl_C::GetTip(nvfwTextView_C*, wtTextSelectCBStru&, ulString&, ulString&) ()
+#33 0x00000000071f904d in wtTextView_C::_PointMotionCB(_wtWindowRec*, char*, wtPointerMotionCBStruct*) ()
+#34 0x0000000007a20b37 in wmiCallCallback ()
+#35 0x0000000007a370e9 in wtCallCallback ()
+#36 0x0000000007955f15 in wtTextObj::wtTextiPointMotionCB(_wtWindowRec*, char*, wtPointerMotionCBStruct*) ()
+#37 0x0000000007a3b384 in wtiPointerMotion ()
+#38 0x0000000007a3b3c3 in wtiPointerMotionCB ()
+#39 0x00007f4c1a3e3da0 in XtDispatchEventToWidget () at /lib64/libXt.so.6
+#40 0x00007f4c1a3e3e8f in DispatchEvent () at /lib64/libXt.so.6
+#41 0x00007f4c1a3e40f6 in _XtDefaultDispatcher () at /lib64/libXt.so.6
+#42 0x000000000787fe30 in qmotif_event_dispatcher(_XEvent*) ()
+#43 0x00007f4c1a3e4491 in XtDispatchEvent () at /lib64/libXt.so.6
+#44 0x00007f4c1a3f0510 in XtAppProcessEvent () at /lib64/libXt.so.6
+#45 0x000000000787f07a in QtMotif::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) ()
+#46 0x00007f4c1e5e5e2f in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () at /software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#47 0x00007f4c1e5e60c8 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () at /software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#48 0x00007f4c1e5e9e3c in QCoreApplication::exec() () at /software/Synopsys-2021_x86_64/verdi/R-2020.12-SP1-1/platform/LINUXAMD64/lib/Qt/libQtCore.so.4
+#49 0x0000000007858c21 in QwApplication::exec() ()
+#50 0x0000000002ae6370 in FUNC_DEBMAIN_LOOP() ()
+#51 0x0000000002aee677 in main ()

@@ -377,8 +377,9 @@ savePropDtl = TRUE
 QwInfoMsgDlg = 575,371,750,250
 importDesignForm = 592,246,715,574
 aboutVerdiDialog = 556,169,787,683
-QwWarnMsgDlg = 650,519,600,250
-QwUserAskDlg = 798,451,324,134
+QwWarnMsgDlg = 650,703,600,250
+unknownSave = 728,385,461,245
+QwUserAskDlg = 798,442,324,134
 [Relationship]
 hideRecursiceNode = FALSE
 [Safety]
@@ -394,7 +395,7 @@ HighlightSafetyObject = TRUE
 4 = string (session file name)
 5 = string (session file name)
 2 = /home/cudia2/Desktop/NSK
-1 = /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/verdiLog/novas_autosave.ses
+1 = /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/verdiLog/novas_autosave.ses
 [Simulation]
 scsPath = scsim
 scsOption = 
@@ -463,7 +464,7 @@ bSVTBMode = TRUE
 SimMode = TRUE
 interactiveDebugging = TRUE
 KeepBreakPoints = FALSE
-vcs_svPath = /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/simv
+vcs_svPath = /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/simv
 [SimulationPlus2]
 eventDumpUnfinish = FALSE
 [Source]
@@ -580,7 +581,7 @@ pdmlMacro = ID_BLACK
 font = COURIER12
 annotFont = Helvetica_M_R_10
 [Text.1]
-viewport = -10 20 1920 906 45
+viewport = -1 27 1920 888 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -671,33 +672,33 @@ isOneSearchVisible = TRUE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = Severity
-width = 60
-visualIndex = 1
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = Code
-width = 60
-visualIndex = 2
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = Type
 width = 60
 visualIndex = 3
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
 name = Message
 width = 2000
 visualIndex = 4
 isHidden = FALSE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = Time
 width = 60
 visualIndex = 0
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+name = Code
+width = 60
+visualIndex = 2
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = Severity
+width = 60
+visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [Vi]
@@ -782,7 +783,7 @@ scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
 getSignalForm = 0 0 800 479 100 30 100 30
-viewPort = 0 25 1920 359 100 65
+viewPort = 0 25 1920 246 100 65
 legendBackground = -c ID_BLACK
 valueBackground = -c ID_BLACK
 curveBackground = -c ID_BLACK
@@ -945,8 +946,8 @@ printBasic = 1 0 0 FALSE FALSE
 printDest = -printer {}
 printSignature = {%f %h %t} {}
 curveWindow_Drag&Drop_Mode = TRUE
-RecentFile1 = "\"/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/dump.fsdb\""
-RecentFile2 = "\"/home/cudia2/Desktop/NSK\""
+RecentFile1 = "\"/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/dump.fsdb\""
+RecentFile2 = "\"/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/dump.fsdb\""
 RecentFile3 = "\"/home/cudia2/Desktop/NSK\""
 RecentFile4 = "\"/home/cudia2/Desktop/NSK\""
 RecentFile5 = "\"/home/cudia2/Desktop/NSK\""
@@ -1310,7 +1311,7 @@ AddImportArgument = FALSE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -s
 [wave.0]
-viewPort = 0 25 1920 359 100 65
+viewPort = 0 25 1920 246 100 65
 [wave.1]
 viewPort = 127 219 960 332 100 65
 [wave.2]

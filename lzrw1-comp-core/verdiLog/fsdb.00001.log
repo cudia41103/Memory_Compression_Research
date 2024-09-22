@@ -1,7 +1,7 @@
 #######################################################################################
 # fsdb.xxxxx.log : log primitive debug message of FSDB Reader
 # This is for R&D to analyze when there are issues happening when FSDB reading
-# The corresponding FSDB file is /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-compression-core/dump.fsdb
+# The corresponding FSDB file is /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/dump.fsdb
 #######################################################################################
 [BASIC]Reader version : Chronologic Simulation VCS Release R-2020.12-SP1-1_Full64
 [BASIC]simulator version : Chronologic Simulation VCS Release R-2020.12-SP1-1_Full64
@@ -14,5 +14,5 @@
 [READSCOPE]Scope read count is 2
 [READSCOPE]Decompressed blk is 1
 [FSDBGate Info] start
-[FSDBGate Info] Total fhdb_compute_count = 23985732
+[FSDBGate Info] Total fhdb_compute_count = 6
 [FSDBGate Info] end
