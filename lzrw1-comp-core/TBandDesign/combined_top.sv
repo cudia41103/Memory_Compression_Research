@@ -9,9 +9,9 @@ module combined_top(
 		finished_cycle
 	);
 
-	parameter STRINGSIZE = 4096;
-	parameter TABLESIZE = 4096;
-	parameter RANDTABLE = 16523;
+	parameter STRINGSIZE = 128;
+	parameter TABLESIZE = 128;
+	parameter RANDTABLE = 2048;
 	localparam TABLE_ADDRESS_WIDTH = $clog2(TABLESIZE);
 
 	//typedefs

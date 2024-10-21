@@ -57,7 +57,8 @@ always_ff @(posedge clock) begin
 	*/
 end
 always_comb begin
-if(reset) ControlBit = 0;
+	ControlBit = 0;
+	if(reset) ControlBit = 0;
 	else if (TableOfPointers[fromHash]== 0) begin 
 		ControlBit = 0;
 	end
@@ -69,8 +70,10 @@ if(reset) ControlBit = 0;
 	end
 	else ControlBit = ControlBit;
 end
-assign Offset = TableOfPointers[fromHash] == 0 ? '0 : (BytePosition - TableOfPointers[fromHash] );
+logic [31:0] offset_temp;
+assign offset_temp = (BytePosition - TableOfPointers[fromHash]);
+assign Offset = TableOfPointers[fromHash] == 0 ? '0 : offset_temp[11:0];
 assign OutByte = !ControlBit ? InByte : '0;
-assign OldBytePosition = TableOfPointers[fromHash];
-assign tableValue = TableOfPointers[fromHash] ;
+assign OldBytePosition = TableOfPointers[fromHash][11:0];
+assign tableValue = TableOfPointers[fromHash];
 endmodule

@@ -71,14 +71,10 @@ module fifo(
 				back_ptr_next = num_bytes_in-(FIFO_SIZE-back_ptr);
 				fifo_buffer_next[FIFO_SIZE-1 : back_ptr] = data_in[FIFO_SIZE-back_ptr-1 : 0];
 				fifo_buffer_next[num_bytes_in-(FIFO_SIZE-back_ptr)-1 : 0] = data_in[num_bytes_in-1:FIFO_SIZE-back_ptr];
-			else begin
+			end else begin
 				back_ptr_next = back_ptr + num_bytes_in;
 				fifo_buffer_next[back_ptr +: num_bytes_in] = data_in[num_bytes_in : 0];
 			end
-				
-
-			end
-			
 		end
 		else if(rd_en_in) begin
 			// make sure we aren't empty -- don't allow advance
@@ -97,12 +93,10 @@ module fifo(
 				back_ptr_next = num_bytes_in-(FIFO_SIZE-back_ptr);
 				fifo_buffer_next[FIFO_SIZE-1 : back_ptr] = data_in[FIFO_SIZE-back_ptr-1 : 0];
 				fifo_buffer_next[num_bytes_in-(FIFO_SIZE-back_ptr)-1 : 0] = data_in[num_bytes_in-1:FIFO_SIZE-back_ptr];
-			else begin
+			end else begin
 				back_ptr_next = back_ptr + num_bytes_in;
 				fifo_buffer_next[back_ptr +: num_bytes_in] = data_in[num_bytes_in : 0];
 			end
 		end
-
 	end
-
 endmodule

@@ -19,10 +19,11 @@ input [15:0] [7:0] CurBytes,BytesAtOffset, // from input history
 input ControlBit, reset, 		// ControlBit from table
 output logic [3:0] Length);
 
-int count;
+logic [3:0] count;
 
 always_comb begin
-
+	Length = '0;
+	count = 0;
 	if (reset) begin
 		Length = '0;
 		count = 0;
@@ -31,7 +32,7 @@ always_comb begin
 	begin
 		count = 0;
 		for (int i = 0; i < 16; i++) begin
-			if(CurBytes[i] == BytesAtOffset[i]) count++;
+			if(CurBytes[i] == BytesAtOffset[i]) count = count + 4'b1;
 			else begin 
 				Length = count;
 				break;

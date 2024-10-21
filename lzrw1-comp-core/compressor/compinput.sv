@@ -28,23 +28,33 @@ output integer bytePtr);
 
 parameter HISTORY = 4096;
 
-logic [HISTORY-1:0] [7:0] myHistory = '0;
-logic [11:0] bytePointer = 0;
-integer count = 0;
+logic [HISTORY-1:0] [7:0] myHistory;
+logic [11:0] bytePointer;
+integer count;
 integer s_offset;
-integer j,k;
+integer j;
+logic [3:0] k;
 
 byte valueHistory;
 
+bit [11:0] temp;
+bit [11:0] temp2;
+bit [31:0] result_temp;
+bit [31:0] result_temp2;
+
+assign result_temp = bytePointer - s_offset;
+assign result_temp2 = HISTORY - bytePointer;
 assign s_offset = (!reset) ? integer' (offset) : '0 ;
+assign temp = (!reset) ? result_temp[11:0] : '0;
+assign temp2 = (!reset) ? result_temp2[11:0] : '0;
 
 always_ff @(posedge clock) begin
 	
 	if (reset) begin
-		bytePointer <= 0;
-		count <= 0;
+		bytePointer <= '0;
+		count <= '0;
 		myHistory <= '0;
-		Done <= 1;
+		Done <= 1'b1;
 	end
 	else if(!valid && 0 ==  myHistory[bytePointer+1]) Done <= 1;
 	else begin
@@ -61,18 +71,22 @@ always_ff @(posedge clock) begin
 		else count <= count;
 		// if first 3 bytes recieved, send to hash function
 		if(Length >= 3) bytePointer <= bytePointer + Length;
-		else  bytePointer <= bytePointer + 1;
+		else  bytePointer <= bytePointer + 12'b1;
 
 	end
 end
 
 always_comb begin
+		toHash = '0;
+		toCompare = '0;
+		NextBytes = '0;
+		k = 4'b0;
 		if(reset) begin
 			toHash = '0;
 		toCompare = '0;
 		NextBytes = '0;
 		end
-		else if (bytePointer >= 1) begin
+		else if (bytePointer >= 1) begin//initial condition checking
 			toHash = {myHistory[bytePointer],myHistory[bytePointer+1],myHistory[bytePointer+2]};		
 		end
 		else toHash = toHash;
@@ -82,9 +96,9 @@ always_comb begin
 		end
 		else if ((myHistory[bytePointer] != 0)  && (bytePointer - s_offset) <= 15 && s_offset > 0 ) begin
 			j = 0;
-			for(int i = 0; i < bytePointer - offset; i++) begin
+			for(int i = 0; i < temp; i++) begin
 				if(j < 16) begin
-				toCompare[j] = myHistory[offset+j];
+				toCompare[j] = myHistory[s_offset+j];
 				j++;
 				/*toCompare[0] = myHistory[offset];
 				toCompare[1] = myHistory[offset+1];
@@ -107,15 +121,21 @@ always_comb begin
 			end		
 			
 		end
-		else toCompare = '0;
-		k = 0;
-		if (bytePointer+16 <= HISTORY) NextBytes = myHistory[bytePointer +: 16];
-		else if(HISTORY-bytePointer <= 0) NextBytes = '0;
+		else  begin
+			toCompare = '0;
+			k = 4'b0;
+		end
+		if (bytePointer+16 <= HISTORY) begin
+			NextBytes = myHistory[bytePointer +: 16];
+		end
+		else if(HISTORY-bytePointer <= 0) begin
+			NextBytes = '0;
+		end
 		else begin		
 			NextBytes = '0;
-			for(int i = 0; i <= HISTORY -bytePointer; i++) begin
+			for(int i = 0; i <= temp2; i++) begin
 				NextBytes[k] = myHistory[bytePointer + k];
-				k++;
+				k = k + 4'b1;
 			end
 		end
 end
