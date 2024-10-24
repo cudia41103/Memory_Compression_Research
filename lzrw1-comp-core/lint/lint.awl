@@ -1,0 +1,3 @@
+waive -rule {{SYNTH_12611}}
+waive -rule {{SYNTH_5064}}
+waive -rule {{WRN_1453}}

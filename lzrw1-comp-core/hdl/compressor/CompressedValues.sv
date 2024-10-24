@@ -38,8 +38,8 @@ always_ff @(posedge clock) begin
 	if (reset) begin
 		compArray <= '0;
 		controlWord <= '0;
-		controlPtr = 0;
-		compressPtr = 0;
+		controlPtr <= 0;
+		compressPtr <= 0;
 	end
 	
 	else if (controlBit && Done == 0) begin

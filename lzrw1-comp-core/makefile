@@ -3,6 +3,7 @@ export VCS_ARCH_OVERRIDE=linux
 VCS_FLAGS= -full64 -lca -sverilog +lint=all,noNS -timescale=1ns/1ns -debug_acc+all -kdb -fsdb -suppress=LCA_FEATURES_ENABLED
 COMP_HDL_SRCS := $(shell find $(PWD)/compressor -name '*.sv')
 DECOMP_HDL_SRCS := $(shell find $(PWD)/decompressor -name '*.sv')
+SRCS := $(COMP_HDL_SRCS) $(DECOMP_HDL_SRCS)
 export LD_LIBRARY_PATH=/custom/lib:$LD_LIBRARY_PATH
 
 

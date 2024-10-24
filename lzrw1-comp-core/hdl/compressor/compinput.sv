@@ -24,7 +24,7 @@ output logic [15:0] [7:0] toCompare,
 output logic [15:0] [7:0] NextBytes,
 output logic [23:0] toHash,
 output bit Done,
-output integer bytePtr);
+output logic [31:0] bytePtr);
 
 parameter HISTORY = 4096;
 

@@ -10,7 +10,7 @@ module compressor_top #(
     parameter STRINGSIZE = 128, 
     parameter TABLESIZE = 128
     )(
-    input logic clock, valid,
+    input logic clock, valid, reset,
     input [15:0] [7:0] CurByte,
     output logic Done,
     output logic [STRINGSIZE-1:0][7:0] compArray,
@@ -18,16 +18,13 @@ module compressor_top #(
     output integer controlPtr
     );
 
-	logic reset;
-    altera_s10_user_rst_clkgate Reset_IP(
-        .ninit_done(reset)
-        );
+
         
     logic [11:0] offset; 
     logic [15:0] [7:0] toCompare; 
     logic [15:0] [7:0] NextBytes;
     logic [23:0] toHash;
-    integer bytePtr;
+    logic[31:0] bytePtr;
     integer compressPtr;
     logic ControlBit;
     logic [3:0] Length;

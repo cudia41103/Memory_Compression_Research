@@ -1,14 +1,13 @@
 module combined_top(
-		clock,
-		reset,
-		valid,
-		CurByte,
-		//done,
-		decompressed_byte,
-		out_valid,
-		finished_cycle
+	input clock, reset, valid,
+	input [15:0] [7:0] CurByte,
+	output [7:0] decompressed_byte,
+	output logic out_valid,finished_cycle
 	);
-
+	// logic reset;
+    // altera_s10_user_rst_clkgate Reset_IP(
+    //     .ninit_done(reset)
+    //     );
 	parameter STRINGSIZE = 128;
 	parameter TABLESIZE = 128;
 	parameter RANDTABLE = 2048;
@@ -23,11 +22,7 @@ module combined_top(
 	} combined_state_type;
 
 
-	//I/O declarations
-	input clock, reset, valid;	//,done;
-	input [15:0] [7:0] CurByte;
-	output [7:0] decompressed_byte;
-	output logic out_valid,finished_cycle;
+
 
 	// intermediate signals
 	logic c_Done;

@@ -31,7 +31,7 @@ module history_buffer(
 	// history buffer array
 	logic[ENTRY_WIDTH-1:0] history[HISTORY_SIZE-1:0], history_next[HISTORY_SIZE-1:0];
 
-	always_ff @(posedge clock, posedge reset) begin
+	always_ff @(posedge clock) begin
 		if(reset) begin
 			for(int i = 0; i < HISTORY_SIZE; i++)
 				history[i] <= '0;
