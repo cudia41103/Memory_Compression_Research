@@ -1,6 +1,7 @@
 -v /home/cudia2/Desktop/NSK_Research/m_compression/libs/comp_emulation/compressor_pkg.sv
 -v /home/cudia2/Desktop/NSK_Research/m_compression/libs/emulation/decompressor_pkg.sv
 -v /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/TBandDesign/package.sv
+-v /home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/hdl/decompressor/decompressor_pkg.sv
 +incdir+/home/cudia2/Desktop/NSK_Research/m_compression/libs/comp_emulation
 +incdir+/home/cudia2/Desktop/NSK_Research/m_compression/libs/emulation
 +incdir+/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/hdl

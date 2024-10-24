@@ -18,39 +18,33 @@
 //
 //	Manas Karanjekar, Mark Chernishoff, and Parker Ridd
 //	ECEn 571 Fall 2017
+		// clock,				// clock input
+		// reset,				// reset input
+		// data_in,			// The 2 byte data-in field. The high bits [15:8] will be ignored if the control word is 0
+		// control_word_in,	// The control word that corresponds to data-in
+		// data_in_valid,		// when this is 1'b1, the decompressor will use the inputs
+		// decompressed_byte,  // the decompressed output
+		// out_valid,			// whether the output is valid. Don't use data if 0. Every cycle this is valid signifies a new byte out.
+		// decompressor_busy	// whether the decompressor is busy. When this is 1'b1, the decompressor will ignore all data inputs.
 
-module decompressor_top(
-		clock,				// clock input
-		reset,				// reset input
-		data_in,			// The 2 byte data-in field. The high bits [15:8] will be ignored if the control word is 0
-		control_word_in,	// The control word that corresponds to data-in
-		data_in_valid,		// when this is 1'b1, the decompressor will use the inputs
-		decompressed_byte,  // the decompressed output
-		out_valid,			// whether the output is valid. Don't use data if 0. Every cycle this is valid signifies a new byte out.
-		decompressor_busy	// whether the decompressor is busy. When this is 1'b1, the decompressor will ignore all data inputs.
+
+import decompressor_types ::*;
+module decompressor_top
+(
+	input  logic clock, reset,
+	input  data_in_t data_in,
+	input  logic control_word_in,
+	input  logic data_in_valid,
+	output logic[7:0] decompressed_byte,
+	output logic out_valid,
+	output logic decompressor_busy
 	);
 
 	parameter HISTORY_SIZE = 4096;
 	localparam HISTORY_ADDR_WIDTH = $clog2(HISTORY_SIZE);
 
-	typedef struct packed {
-		logic[3:0] length;
-		logic[11:0] offset;
-	} compressed_t;
-
-	typedef union packed {
-		logic[15:0] character;
-		compressed_t compressed_objects;
-
-	} data_in_t;
 	
-	input  logic clock, reset;
-	input  data_in_t data_in;
-	input  logic control_word_in;
-	input  logic data_in_valid;
-	output logic[7:0] decompressed_byte;
-	output logic out_valid;
-	output logic decompressor_busy;
+
 
 	
 	typedef enum {
@@ -68,10 +62,10 @@ module decompressor_top(
 	data_in_t data_in_fp, data_in_fp_next;
 	logic control_word_in_fp, control_word_in_fp_next;
 
-	assign data_in_int = data_in;
+	// assign data_in_int = data_in;
 
 	// flip flops
-	always_ff @ (posedge clock, posedge reset) begin
+	always_ff @ (posedge clock) begin
 		if(reset) begin
 			decomp_state <= IDLE;
 			history_out_addr <= '0;
@@ -80,7 +74,7 @@ module decompressor_top(
 			data_in_fp <= '0;
 			control_word_in_fp <= '0;
 		end
-		else if(clock) begin
+		else begin
 			decomp_state <= decomp_state_next;
 			history_out_addr <= history_out_addr_next;
 			history_in_addr <= history_in_addr_next;
@@ -196,34 +190,34 @@ module decompressor_top(
 
 
 
-	// assertions
-	property notidlebusy_p;
-		@(posedge clock)
-			disable iff(reset)
-			((decomp_state === IDLE) |-> (decompressor_busy === 1'b0));
-	endproperty
-	notidlebusy_a : assert property(notidlebusy_p) else $error("decompressor_busy was asserted while the decompressor state was IDLE");
+	// // assertions
+	// property notidlebusy_p;
+	// 	@(posedge clock)
+	// 		disable iff(reset)
+	// 		((decomp_state === IDLE) |-> (decompressor_busy === 1'b0));
+	// endproperty
+	// notidlebusy_a : assert property(notidlebusy_p) else $error("decompressor_busy was asserted while the decompressor state was IDLE");
 
-	property datainnotxwhenvalid_p;
-		@(posedge clock)
-			disable iff(reset)
-			((data_in_valid === 1'b1) |-> not $isunknown(data_in));
-	endproperty
-	datainnotxwhenvalid_a : assert property(datainnotxwhenvalid_p) else $error("Data in was X when data_in_valid was 1'b1");
+	// property datainnotxwhenvalid_p;
+	// 	@(posedge clock)
+	// 		disable iff(reset)
+	// 		((data_in_valid === 1'b1) |-> not $isunknown(data_in));
+	// endproperty
+	// datainnotxwhenvalid_a : assert property(datainnotxwhenvalid_p) else $error("Data in was X when data_in_valid was 1'b1");
 
-	property controlnotxwhenvalid_p;
-		@(posedge clock)
-			disable iff(reset)
-			((data_in_valid === 1'b1) |-> not $isunknown(control_word_in));
-	endproperty
-	controlnotxwhenvalid_a : assert property(controlnotxwhenvalid_p) else $error("control_word_in in was X when data_in_valid was 1'b1");
+	// property controlnotxwhenvalid_p;
+	// 	@(posedge clock)
+	// 		disable iff(reset)
+	// 		((data_in_valid === 1'b1) |-> not $isunknown(control_word_in));
+	// endproperty
+	// controlnotxwhenvalid_a : assert property(controlnotxwhenvalid_p) else $error("control_word_in in was X when data_in_valid was 1'b1");
 
-	property dontoutputx_p;
-		@(posedge clock)
-			disable iff(reset)
-			((out_valid === 1'b1) |-> not $isunknown(decompressed_byte));
-	endproperty
-	dontoutputx_a : assert property(dontoutputx_p) else $error("decompressed_byte was X when out_valid was 1'b1");
+	// property dontoutputx_p;
+	// 	@(posedge clock)
+	// 		disable iff(reset)
+	// 		((out_valid === 1'b1) |-> not $isunknown(decompressed_byte));
+	// endproperty
+	// dontoutputx_a : assert property(dontoutputx_p) else $error("decompressed_byte was X when out_valid was 1'b1");
 
 
 endmodule

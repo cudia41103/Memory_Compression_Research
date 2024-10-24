@@ -1,13 +1,13 @@
 module combined_top(
-	input clock, reset, valid,
+	input clock, valid,
 	input [15:0] [7:0] CurByte,
 	output [7:0] decompressed_byte,
 	output logic out_valid,finished_cycle
 	);
-	// logic reset;
-    // altera_s10_user_rst_clkgate Reset_IP(
-    //     .ninit_done(reset)
-    //     );
+	logic reset;
+    altera_s10_user_rst_clkgate Reset_IP(
+        .ninit_done(reset)
+        );
 	parameter STRINGSIZE = 128;
 	parameter TABLESIZE = 128;
 	parameter RANDTABLE = 2048;
@@ -107,8 +107,8 @@ module combined_top(
 
 
 	assign out_valid = d_out_valid;
-
-
+	data_in_t data_in;
+	assign data_in.character = d_data_in;
 		// module instantiations
 	compressor_top #(
 			.STRINGSIZE(STRINGSIZE),
@@ -131,7 +131,7 @@ module combined_top(
 		decompressor(
 			.clock(clock),
 			.reset(reset),
-			.data_in(d_data_in),
+			.data_in(data_in),
 			.control_word_in(d_control_word_in),
 			.data_in_valid(d_data_in_valid),
 			.decompressed_byte(decompressed_byte),
