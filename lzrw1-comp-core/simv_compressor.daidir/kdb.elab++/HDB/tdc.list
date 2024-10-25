@@ -1,7 +1,6 @@
-compressor/Comparator.sv
-compressor/CompressedValues.sv
-compressor/compinput.sv
-compressor/compinput_tb.sv
-compressor/compressor_top.sv
-compressor/hashFunction.sv
-compressor/tableofPtr.sv
+/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/hdl/compressor/Comparator.sv
+/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/hdl/compressor/CompressedValues.sv
+/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/hdl/compressor/compinput.sv
+/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/hdl/compressor/compressor_top.sv
+/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/hdl/compressor/hashFunction.sv
+/home/cudia2/Desktop/NSK_Research/m_compression/lzrw1-comp-core/hdl/compressor/tableofPtr.sv
