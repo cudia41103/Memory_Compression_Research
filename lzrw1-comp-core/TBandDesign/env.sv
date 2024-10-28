@@ -48,12 +48,13 @@ endtask : wait_for_end
 
 
 task run();
+logic [1:0] input_string_sel = 2'b01;
 $display(": Start of run() method ",$time);
 reset();
 cfg_dut();
 $display(": End of run() method ",$time);
 drv = new(input_intf);
-drv.start();
+drv.start(input_string_sel);
 //wait_for_end();
 chk = new(output_intf);
 chk.wait_for_end();

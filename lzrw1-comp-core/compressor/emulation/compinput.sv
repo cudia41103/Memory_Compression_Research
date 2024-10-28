@@ -72,24 +72,27 @@ end
 always_comb begin
 		if(reset) begin
 			toHash = '0;
-		toCompare = '0;
-		NextBytes = '0;
+			toCompare = '0;
+			NextBytes = '0;
+		end else begin
+			toHash = toHash;
+			NextBytes = NextBytes;
+			toCompare = toCompare;
+			if (bytePointer >= 1) begin
+				toHash = {myHistory[bytePointer],myHistory[bytePointer+1],myHistory[bytePointer+2]};		
+			end
 		end
-		else if (bytePointer >= 1) begin
-			toHash = {myHistory[bytePointer],myHistory[bytePointer+1],myHistory[bytePointer+2]};		
-		end
-		else toHash = toHash;
 		if ((myHistory[bytePointer] != 0) && (bytePointer - s_offset) > 15 && s_offset > 0 ) begin
-			toCompare = myHistory[(s_offset) +: 16];
-			NextBytes = myHistory[bytePointer +: 16];
-		end
+				toCompare = myHistory[(s_offset) +: 16];
+				NextBytes = myHistory[bytePointer +: 16];
+			end
 		else if ((myHistory[bytePointer] != 0)  && (bytePointer - s_offset) <= 15 && s_offset > 0 ) begin
-			j = 0;
 			for(int i = 0; i < 16; i++) begin
-				if(j < 16) begin
-				toCompare[j] = myHistory[offset+j];
-				j++;
-				/*toCompare[0] = myHistory[offset];
+				if(i < 16) begin
+				toCompare[i] = myHistory[offset+i];
+				i++;
+				/*
+				toCompare[0] = myHistory[offset];
 				toCompare[1] = myHistory[offset+1];
 				toCompare[2] = myHistory[offset+2];
 				toCompare[3] = myHistory[offset+3];
@@ -104,7 +107,8 @@ always_comb begin
 				toCompare[12] = myHistory[offset+12];
 				toCompare[13] = myHistory[offset+13];
 				toCompare[14] = myHistory[offset+14];
-				toCompare[15] = myHistory[offset+15];*/
+				toCompare[15] = myHistory[offset+15];
+				*/
 				end
 			//NextBytes = myHistory[bytePointer +: 16];	
 			end	

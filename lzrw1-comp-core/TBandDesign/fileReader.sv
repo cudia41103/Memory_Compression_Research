@@ -37,7 +37,7 @@ endfunction	: read_data
 /* This function is called whenever we have the 16 bytes buffer full */
 task drive_data();
 	int data_len = global_string.len();
-	for(int start_point=0;start_point<data_len;start_point=start_point+16)
+	for(int start_point=0;start_point<data_len;start_point=start_point+16)//iterate through input text one byte at a time
 	begin
 	@(posedge input_intf.clock)
 	begin

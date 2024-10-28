@@ -12,9 +12,9 @@ module top();
 
 bit clock;
 
-initial
+initial begin : clock_generation
 	forever	#10 clock = ~clock;
-
+end :clock_generation
 /*	Input interface		*/
 input_interface input_intf(clock);
 

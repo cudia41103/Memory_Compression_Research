@@ -14,15 +14,16 @@ this.input_intf = input_intf_new;
 endfunction
 
 
-task start();
+task start(input logic [1:0] input_string_sel);
 $display("-D\t Inside start method of the driver");
 /* We first generate a test file */
 tw = new;	// Create object and allocate memory
 fr = new(input_intf);	// Create object and allocate memory
 
-	randcase
-	10 : 	begin
+	case (input_string_sel)
+	2'b00 : 	begin
 		completely_random cr;
+		$display("Creating Completely Random String");
 		cr = new();
 		tw = cr;
 		cr.randomize();
@@ -37,8 +38,9 @@ fr = new(input_intf);	// Create object and allocate memory
 		tw.close_file();
 		end
 
-	10 : 	begin
+	2'b01 : 	begin
 		moderately_random mr;
+		$display("Creating Moderately Random String");
 		mr = new();
 		tw = mr;
 		mr.randomize();
@@ -53,8 +55,9 @@ fr = new(input_intf);	// Create object and allocate memory
 		tw.close_file();
 		end
 
-	10 : 	begin
+	2'b10: 	begin
 		all_strings_same ar;
+		$display("Creating All Strings Identically");
 		ar = new();
 		tw = ar;
 		ar.randomize();

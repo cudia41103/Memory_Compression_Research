@@ -29,7 +29,8 @@ integer bytePtr;
 
 logic ControlBit;
 logic [3:0] Length;
-logic [15:0] [7:0] CurBytes,BytesAtOffset;
+logic [15:0] [7:0] BytesAtOffset;
+logic [15:0] CurBytes;
 byte InByte;
 logic [11:0] fromHash;
 logic [11:0] OldBytePosition,Offset;
@@ -45,7 +46,7 @@ compinput #(STRINGSIZE) comp (comp_port.clock, comp_port.reset, comp_port.valid,
 input [15:0] [7:0] CurBytes,BytesAtOffset, // from input history
 input ControlBit, reset, 		// ControlBit from table
 output logic [3:0] Length); 	*/
-Comparator cptr (CurBytes,BytesAtOffset,ControlBit, comp_port.reset,Length);
+Comparator cptr (CurBytes, BytesAtOffset, ControlBit, comp_port.reset, Length);
 
 /*
 input clock, reset,
